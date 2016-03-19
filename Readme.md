@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nataliia Sergieieva](https://up.htmlacademy.ru/adaptive/6/user/42348).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
