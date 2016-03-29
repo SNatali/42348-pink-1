@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+  
+    <header class="header-bg">
+     <div class="container">
+      <div class="header-wrap">
+       <figure class="logo-wrap">
+          <a class="logo-link" href="index.html">
+            <img src="http://placehold.it/150x100">
+          </a>
+        </figure>
+        <nav class="nav-wrap">
+          <ul class="nav-main">
+            <li class="nav-main__item">
+              <a class="nav-main__link">Главная</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link">Фотографии</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link">Конкурс</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link">HTMLACADEMY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="form-title">
+      Конкурс на самое безбашеное путешествие с Пинк
+    </h1>
+    </div>
+    
+    </header>
+     <main class="main-form">
+      <div class="container">
+    <form class="content-form" action="/echo" method="post" enctype="multipart/form-data">
+      <fieldset class="content-form__fieldset">
+        <legend class="content-form__title">Поделитесь своей историей и  получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните 
+        </legend>
+         <div class="field-text">
+          <label for="yourname">имя:</label>
+          <input type="text" id="yourname" name="first-name" required placeholder="введите ваше имя">
+        </div>
+
+        <div class="field-text">
+          <label for="surname">фамилия:</label>
+          <input type="text" id="surname" name="second-name" required placeholder="укажите фамилию">
+        </div>
+
+        <div class="field-text">
+          <label for="father-name">отчество:</label>
+          <input type="text" id="father-name" name="third-name" placeholder="ну и отчество тоже">
+        </div>
+      </fieldset>
+
+      <fieldset class="content-form__fieldset">
+          <legend class="content-form__title">
+          Ваши безбашенные достижения в путешествии
+          </legend>
+          <div class="field-checkbox">
+            <div class="content-form__checkbo1">
+              <input type="checkbox" name="self" id="photo" value="progress" checked>
+              <label for="photo">сделал селфи с акулой</label> 
+            </div>
+            <div class="field-checkbox">
+              <input type="checkbox" name="sunburn" id="beach" value="progress" checked>
+              <label for="beach">обгорел на пляже</label>  
+            </div>
+            <div class="field-checkbox">
+              <input type="checkbox" name="saw-сhack-noris" id="saw" value="progress">
+              <label for="saw">видел чака норриса</label>
+            </div>
+            <div class="field-checkbox">
+              <input type="checkbox" name="buy-souvenirs" id="buy" value="progress">
+              <label for="buy">накупил сувениров</label>
+            </div>
+            <div class="field-checkbox">
+              <input type="checkbox" name="keep-tower" id="keep" value="progress" checked>
+              <label for="keep">ужержал башню</label>
+            </div>
+            <div class="field-checkbox">
+              <input type="checkbox" name="break-down-hotel" id="hotel" value="progress">
+              <label for="hote;">разгромил отель</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="content-form__fieldset">
+          <div class="field-text">
+          <label for="yourname">Номер телефончика</label>
+          <input type="tel" id="yourname" name="first-name" required placeholder="номер, пожалуйста">
+        </div>
+
+        <div class="field-text">
+          <label for="surname">Адресок почты
+          </label>
+          <input type="email" id="surname" name="second-name" required placeholder="E&ndash;mail, пожалуйста">
+        </div>
+        </fieldset>
+
+        <fieldset class="content-form__fieldset">
+        <legend class="content-form__title">
+          С какими приложением путешествовали?
+        </legend>
+
+          <div class="field-radio">
+            <input type="radio" name="pink" value="ios" id="forios" checked required>
+            <label for="">Pink для iOS</label>
+          </div>
+
+         <div class="field-radio">
+            <input type="radio" name="pink" value="android" id="forandroid" required>
+            <label for="">Pink на Android</label>
+          </div>
+
+          <div class="field-radio">
+            <input type="radio" name="pink" value="windows" id="forphone" required>
+            <label for="forphone">Windows Phone</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="content-form__fieldset">
+          <legend class="content-form__title">
+           <textarea>можно прям в красках, не стесняясь в выражениях</textarea> 
+          <button class="bnt btn--form">Отправить форму</button>  <p class="content-form__subscribe-text">
+          <span>*</span> &mdash; обязательные поля
+        </p>
+          </legend>
+        </fieldset>
+    </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-logo">
+      <a class="footer-logo__link" href=""><img src="http://placehold.it/67x68" alt=""></a>
+    </div>
+    <div class="footer-social">
+      <a class="footer-social__item  footer-social__item--tw" href="#"></a>
+      <a class="footer-social__item  footer-social__item--fb" href="#"></a>
+      <a class="footer-social__item  footer-social__item--youtube" href="#"></a>
+    </div>
+    <div class="footer-copyright">
+      <p class="footer-copyright__text">разработано
+        <a class="footer-copyright__link" href="https://htmlacademy.ru">
+          <img src="http://placehold.it/67x68" alt="">
+        </a>
+      </p>
+    </div>
+  </footer>
+       
