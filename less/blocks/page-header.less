@@ -1,0 +1,42 @@
+.header-wrap{
+	background-color: @header-wrpap_bg;
+	z-index: 2;
+
+}
+.form-title{
+	text-align: center;
+	width: 210px;
+    margin: 0 auto;
+    font-weight: normal;
+    .block-text(@white; @font-size-offer-text; @line-height-nav);
+
+
+}
+.header-bg{
+	background: @dack_blue_grey;
+	z-index: 1;
+	margin: 0;
+}
+figure{
+	margin: 0
+}
+.header-bg__telefon{
+	background: url("../img/iphone-hand-mobile.png") no-repeat;
+	background-position: bottom left;
+	width: 255px;
+	height: 406px;
+	z-index: 1;
+}
+
+@media @tablet-widths{
+
+}
+
+@media @desktop-widths{
+	.header-wrap{
+	background-color: @header-wrpap_bg;
+	z-index: 2;
+	min-height: 102px;
+
+}
+}

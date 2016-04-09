@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   
     <header class="header-bg">
-     <div class="container">
       <div class="header-wrap">
-       <figure class="logo-wrap">
-          <a class="logo-link" href="index.html">
-            <img src="http://placehold.it/150x100">
+        <div class="container">
+          <div class="logo">
+          <a class="logo__link" href="index.html">
+           Pink
           </a>
-        </figure>
+        </div>
         <nav class="nav-wrap">
           <ul class="nav-main">
             <li class="nav-main__item">
@@ -31,6 +33,8 @@
           </ul>
         </nav>
       </div>
+      </div>
+      <div class="container">
       <h1 class="form-title">
       Конкурс на самое безбашеное путешествие с Пинк
     </h1>
@@ -41,21 +45,21 @@
       <div class="container">
     <form class="content-form" action="/echo" method="post" enctype="multipart/form-data">
       <fieldset class="content-form__fieldset">
-        <legend class="content-form__title">Поделитесь своей историей и  получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните 
+        <legend class="content-form__title-box">Поделитесь своей историей и  получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните 
         </legend>
          <div class="field-text">
-          <label for="yourname">имя:</label>
-          <input type="text" id="yourname" name="first-name" required placeholder="введите ваше имя">
+          <label class="field-text__title" for="yourname">Имя:</label>
+          <input type="text" id="yourname" name="first-name" required placeholder="Введите ваше имя">
         </div>
 
         <div class="field-text">
-          <label for="surname">фамилия:</label>
-          <input type="text" id="surname" name="second-name" required placeholder="укажите фамилию">
+          <label class="field-text__title" for="surname">Фамилия:</label>
+          <input type="text" id="surname" name="second-name" required placeholder="Укажите фамилию">
         </div>
 
         <div class="field-text">
-          <label for="father-name">отчество:</label>
-          <input type="text" id="father-name" name="third-name" placeholder="ну и отчество тоже">
+          <label class="field-text__title" for="father-name">Отчество:</label>
+          <input type="text" id="father-name" name="third-name" placeholder="Ну и отчество тоже">
         </div>
       </fieldset>
 
@@ -64,41 +68,55 @@
           Ваши безбашенные достижения в путешествии
           </legend>
           <div class="field-checkbox">
-            <div class="content-form__checkbo1">
-              <input type="checkbox" name="self" id="photo" value="progress" checked>
-              <label for="photo">сделал селфи с акулой</label> 
+            <label class="field-checkbox__input" for="photo">
+             <input type="checkbox" name="self" id="photo" value="progress" checked>
+             <span>Сделал селфи с акулой</span>
+            </label> 
             </div>
             <div class="field-checkbox">
+            <label class="field-checkbox__input" for="beach">
               <input type="checkbox" name="sunburn" id="beach" value="progress" checked>
-              <label for="beach">обгорел на пляже</label>  
+              <span>Обгорел на пляже</span>
+              </label>  
             </div>
             <div class="field-checkbox">
+            <label class="field-checkbox__input" for="saw">
               <input type="checkbox" name="saw-сhack-noris" id="saw" value="progress">
-              <label for="saw">видел чака норриса</label>
+              <span>Видел чака норриса</span>
+            </label>
             </div>
             <div class="field-checkbox">
+            <label class="field-checkbox__input" for="buy">
               <input type="checkbox" name="buy-souvenirs" id="buy" value="progress">
-              <label for="buy">накупил сувениров</label>
+              <span>Накупил сувениров</span>
+              </label>
             </div>
             <div class="field-checkbox">
+              <label class="field-checkbox__input" for="keep">
               <input type="checkbox" name="keep-tower" id="keep" value="progress" checked>
-              <label for="keep">ужержал башню</label>
+              <span>Ужержал башню</span>
+              </label>
             </div>
             <div class="field-checkbox">
+            <label class="field-checkbox__input" for="hotel">
               <input type="checkbox" name="break-down-hotel" id="hotel" value="progress">
-              <label for="hote;">разгромил отель</label>
+              <span>Разгромил отель</span>
+            </label>
             </div>
-          </div>
+        
         </fieldset>
 
         <fieldset class="content-form__fieldset">
           <div class="field-text">
-          <label for="yourname">Номер телефончика</label>
-          <input type="tel" id="yourname" name="first-name" required placeholder="номер, пожалуйста">
+          <label class="field-text__title" for="yourname">
+            Номер телефончика
+          </label>
+          <input type="tel" id="yourname" name="first-name" required placeholder="Номер, пожалуйста">
         </div>
 
         <div class="field-text">
-          <label for="surname">Адресок почты
+          <label class="field-text__title" for="surname">
+            Адресок почты
           </label>
           <input type="email" id="surname" name="second-name" required placeholder="E&ndash;mail, пожалуйста">
         </div>
@@ -110,30 +128,41 @@
         </legend>
 
           <div class="field-radio">
+            <label class="field-radio__input" for="forios">
             <input type="radio" name="pink" value="ios" id="forios" checked required>
-            <label for="">Pink для iOS</label>
+            <span>Pink для iOS</span>
+            </label>
           </div>
 
          <div class="field-radio">
+            <label class="field-radio__input" for="forandroid">
             <input type="radio" name="pink" value="android" id="forandroid" required>
-            <label for="">Pink на Android</label>
+            <span>Pink на Android</span>
+            </label>
           </div>
 
           <div class="field-radio">
+          <label class="field-radio__input" for="forphone">
             <input type="radio" name="pink" value="windows" id="forphone" required>
-            <label for="forphone">Windows Phone</label>
+            <span>Windows Phone</span>
+          </label>
           </div>
         </fieldset>
 
         <fieldset class="content-form__fieldset">
-          <legend class="content-form__title">
-           <textarea>можно прям в красках, не стесняясь в выражениях</textarea> 
-          <button class="bnt btn--form">Отправить форму</button>  <p class="content-form__subscribe-text">
+          <legend class="content-form__title">Опишите свои эмоции</legend>
+           <textarea>Можно прям в красках, не стесняясь в выражениях</textarea> 
+          <a href="#" class="content-form__btn">
+          Отправить форму
+          </a>  
+          <p class="content-form__subscribe-text">
           <span>*</span> &mdash; обязательные поля
         </p>
-          </legend>
+          
         </fieldset>
+      
     </form>
+     </div>
     </div>
   </main>
   <footer class="footer">
