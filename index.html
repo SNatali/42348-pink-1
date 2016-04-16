@@ -2,94 +2,118 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
      <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="header-bg">
-      <div class="header-wrap">
-     <div class="container">
-      <div class="logo">
+    <header class="page-header">
+      <div class="page-header__inner">
+
+
           <a class="logo__link" >
-            <img src="img/logo-pink-white-mobile.svg">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+            <g>
+            <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064
+            c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428
+            c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+            <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283
+            c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+            <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256
+            C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129
+            c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+            <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451
+            C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561
+            c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861
+            v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+            </g>
+            </svg>
           </a>
-        </div>
-      </div>
-        <nav class="nav-wrap">
-        <button class="close-form"></button>
-          <ul class="nav-main">
-            <li class="nav-main__item">
-              <a class="nav-main__link">Главная</a>
+
+        <nav class="mob-nav">
+           <a class="close-form" id="close-form"><span></span></a>
+        </nav>
+
+        <nav class="main-nav">
+
+          <ul class="main-nav__list" id="main-nav__list">
+            <li class="main-nav__item main-nav__active">
+              <a class="main-nav__link">Главная</a>
             </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link">Фотографии</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотографии</a>
             </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link">Конкурс</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Конкурс</a>
             </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link">HTMLAcademy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link">HTMLAcademy</a>
             </li>
           </ul>
         </nav>
 
       </div>
-      <figure class="header-bg__telefon">
+      <h1 class="index-title">Взгляни на жизнь иначе</h1>
+      <div class="download">
 
-      </figure>
-      </div>
-    </header>
-    <div class="download">
-      <div class="container">
-        <a class="download__btn" href="">Скачать приложение</a>
+        <a class="download__btn btn" href="">Скачать приложение</a>
         <div class="logo-image">
-          <a class="logo-image__link logo-image__link--os" href="#"></a>
-          <a class="logo-image__link logo-image__link--android" href="#"></a>
-          <a class=" logo-image__link logo-image__link--windows" href="#"></a>
+        <a class="logo-image__link logo-image__link--osx" href="#">osx</a>
+        <a class="logo-image__link logo-image__link--android" href="#">android</a>
+        <a class=" logo-image__link logo-image__link--windows" href="#">windows</a>
         </div>
+
          <p class="download__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8 </p>
-      </div>
+
     </div>
-    <div class="offer">
-      <div class="container">
+
+    </header>
+
+    <h2 class="offer">
+
       <span class="offer__text">
         Устали от серости  мегаполиса?
       </span>
       <span class="offer__text">
         Нам есть, что вам  предложить!
       </span>
-      </div>
-    </div>
-    <div class="section-content">
-      <div class="container">
-        <div class="section-content__item">
-          <h3 class="section-content__title">
+
+    </h2>
+
+    <div class="fitches-content">
+
+        <div class="fitches-content__item">
+          <h3 class="fitches-content__title">
             Поднимает настроение
           </h3>
-          <p class="section-content__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+          <p class="fitches-content__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
           </p>
         </div>
-        <div class="section-content__item">
-          <h3 class="section-content__title">
+
+        <div class="fitches-content__item">
+          <h3 class="fitches-content__title">
             Меняет мир вокруг
           </h3>
-          <p class="section-content__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          <p class="fitches-content__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
       </div>
-      <div class="section-content__item">
-        <h3 class="section-content__title">
+
+      <div class="fitches-content__item">
+        <h3 class="fitches-content__title">
           Заводите новых друзей
         </h3>
-        <p class="section-content__text">Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        <p class="fitches-content__text">Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
         </p>
       </div>
-      <figure class="section-content__bg"></figure>
-      </div>
+
+
     </div>
+
     <div class="reviews">
-      <div class="container">
+
         <blockquote class="reviews__item">
          <header class="reviews__header">
             <p class="reviews__header--text">Николай Петров
@@ -98,76 +122,99 @@
           <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
           </p>
         </blockquote>
-         <div class="pagination">
+         <!--<div class="pagination">
           <span class="pagination__item pagination__item--active"></span>
           <span class="pagination__item"></span>
           <span class="pagination__item"></span>
-       </div>
-       </div>
+       </div>-->
+
     </div>
+
      <div class="prices">
-      <div class="container">
-      <article class="prices__wrap">
-        <header class="prices__table">
-          <ul class="prices__row">
-            <li class="prices__cell">стандарт</li>
-          </ul>
-          <ul class="prices__row">
-            <li class="prices__cell">3,99 USD</li>
-          </ul>
-        </header>
-          <ul class="prices__row">
-            <li class="prices__cell">розовый фильтр</li>
-            <li class="prices__cell"><span></span></li>
-          </ul>
-          <ul class="prices__row">
-            <li class="prices__cell">смайлики</li>
-            <li class="prices__cell"><span></span></li>
-          </ul>
-          <ul class="prices__row">
-            <li class="prices__cell">
-              комментарии
-            </li>
-            <li class="prices__cell">
-              <span></span>
-             </li>
-          </ul>
+      <div class="prices__wrap">
+        <table class="prices__table">
+          <tr class="prices__row">
+            <td>стандарт</td>
+            <td>3,99 USD</td>
+          </tr>
+          <tr class="prices__row">
+            <td class="prices__cell">розовый фильтр</td>
+            <td class="prices__cell "><span class="icon-up">yes</span></td>
+            <td class="prices__cell "><span class="icon-up">yes</span></td>
+            <td class="prices__cell "><span class="icon-up">yes/span></td>
+          </tr>
+          <tr class="prices__row">
+            <td class="prices__cell">смайлики</td>
+            <td class="prices__cell "><span class="icon-down">no</span></td>
+            <td class="prices__cell "><span class="icon-up">yes</span></td>
+            <td class="prices__cell "><span class="icon-up">yes</span></td>
+          </tr>
+          <tr class="prices__row">
+            <td class="prices__cell">комментарии</td>
+            <td class="prices__cell "><span class="icon-down">no</span></td>
+            <td class="prices__cell "><span class="icon-down">no</span></td>
+            <td class="prices__cell "><span class="icon-up">yes</span></td>
+          </tr>
+        </table>
+      </div>
 
-      </article>
-
-      <div class="pagination">
+     <!--<div class="pagination">
         <span class="pagination__item"></span>
         <span class="pagination__item pagination__item--active"></span>
         <span class="pagination__item"></span>
-      </div>
-    </div>
+      </div>-->
+
   </div>
-    <footer class="footer-index">
-      <div class="container">
+    <section class="contacts">
 
-    <div class="footer-index__wrap">
-      <h3 class="footer-index__title">Остались вопросы?<br>Свяжитесь с нами!</h3>
 
-      <div class="footer-index__box">
-        <span class="footer-index__text">Звоните:</span>
-        <a class="footer-index__link" href="+7 (812)555-66-66">+7 (812)555-66-66</a>
+
+      <h3 class="contacts__title">
+        <span>Остались вопросы?</span>
+        <span>Свяжитесь с нами!</span>
+      </h3>
+
+      <div class="contacts__box">
+        <span class="contacts__text">Звоните:</span>
+        <a class="contacts__link" href="tel +7 (812)555-66-66">+7 (812)555-66-66</a>
       </div>
 
-      <div class="footer-index__box">
-        <span class="footer-index__text">Пишите:</span>
-        <a class="footer-index__link" href="mailto:mail@htmlacademy">mail@htmlacademy</a>
+      <div class="contacts-index__box">
+        <span class="contacts__text">Пишите:</span>
+        <a class="contacts__link" href="mailto:mail@htmlacademy">mail@htmlacademy</a>
       </div>
 
-      <div class="footer-index__box">
-        <span class="footer-index__text">Приежайте в гости:</span>
-        <a class="footer-index__link" href="#">ул.Большая Конюшенная, 19/8</a>
+      <div class="contacts__box">
+        <span class="contacts__text">Приежайте в гости:</span>
+        <a class="contacts__link" href="#">ул.Большая Конюшенная, 19/8</a>
       </div>
 
-    </div>
-    <div class="map"></div>
-      </div>
 
-   </footer>
+    </section>
 
+   <div class="map"></div>
+
+      <footer class="footer">
+        <div class="footer__logo"></div>
+
+        <div class="footer__social">
+          <a class="footer__social--icon footer__social--tw" href=""></a>
+          <a class="footer__social--icon footer__social--fb" href=""></a>
+          <a class="footer__social--icon footer__social--youtube" href=""></a>
+        </div>
+
+        <div class="footer__logo-acad">
+          <span class="footer__logo-acad--text"></span>
+        </div>
+      </footer>
+      <script src="js/script.js"></script>>
   </body>
 </html>
+
+
+
+
+
+
+
+

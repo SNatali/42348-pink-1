@@ -1,73 +1,26 @@
-@import "blocks/main-nav.less";
-@import "blocks/download-btn.less";
-@import "blocks/page-header.less";
 @import "variables.less";
 @import "mixins.less";
-@import "global/fonts.less";
+@import "fonts.less";
+@import "blocks/page-header.less";
+@import "blocks/page-header__inner.less";
+@import "blocks/main-nav.less";
+@import "blocks/index-title.less";
+@import "blocks/download.less";
 @import "blocks/offer.less";
-@import "blocks/section-content.less";
+@import "blocks/fitches-content.less";
 @import "blocks/reviews.less";
 @import "blocks/prices.less";
-@import "blocks/footer-index.less";
+@import "blocks/contacts.less";
+@import "blocks/map.less";
+@import "blocks/footer.less";
+@import "blocks/mob-nav.less";
+
+
 @import "blocks/main-form.less";
 @import "blocks/photo-offer.less";
 @import "blocks/reviews-photo.less";
 @import "blocks/show-photoes.less";
 @import "blocks/editor-photo.less";
+@import "global/base.less";
 
-body {
-	font-family: @headings-font-family;
-	font-weight: @headings-font-weight;
-    font-size: @font-size-base;
-    line-height: @headings-line-height;
-    color: @headings-color;
-    margin: 0;
-    padding: 0;
-}
 
-@mobile-widths-only: ~"(max-width: 499px)";
-@tablet-widths: ~"(min-width: 700px)";
-@desktop-widths: ~"(min-width: 1200px)";
-
-.clearfix {
-  &::after {
-    content: "";
-
-    display: table;
-    clear: both;
-  }
-}
-.container {
-  width: 320px;
-  margin: 0 auto;
- 	
-
-  @media @tablet-widths {
-    width: 620px;
-  }
-
-  @media @desktop-widths {
-    width: 940px;
-  }
-}
-.header-bg {
-
-  background: @dack_blue_grey url("../img/bg-back-mobile.jpg") no-repeat center top / 699px auto;
-  background-size: cover;
-  //min-height: 2555px;
-}
-@media @tablet-widths {
-  .header-bg {
-   background: @dack_blue_grey url("../img/bg-back-mobile.jpg") no-repeat center top / 701px auto;
-   background-size: cover;
-  //min-height: 2555px;
-  }
-}
-
-@media @desktop-widths {
-  .header-bg {
-   background: @dack_blue_grey url("../img/bg-back-mobile.jpg") no-repeat center top / 1200px auto;
-   background-size: cover;
-  //min-height: 2555px;
-  }
-}
