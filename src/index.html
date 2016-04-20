@@ -9,7 +9,7 @@
 </head>
 
 <body>
-@@include('blocks/page-header/page-header.html')
+<!--@@include('blocks/page-header/page-header.html')-->
   <header class="page-header">
    <div class="page-header__inner">
       <a class="logo" >
@@ -25,40 +25,226 @@
       </a>
 
       <nav class="main-nav">
-        <a class="toggler-nav" id="toggler-nav"><span></span></a>
+        <a class="toggler-nav" id="toggler-nav">
+          <span></span>
+        </a>
         <ul class="main-nav__list" id="main-nav__list">
           <li class="main-nav__item main-nav__active">
-            <a class="main-nav__link">Главная</a>
+            <a class="main-nav__link">
+              Главная
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
+            <a class="main-nav__link">
+              Фотографии
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
+            <a class="main-nav__link">
+              Конкурс
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">HTMLAcademy</a>
+            <a class="main-nav__link">
+              HTMLAcademy
+            </a>
           </li>
         </ul>
       </nav>
 
     </div>
-      <h1 class="index-title">Взгляни на жизнь иначе</h1>
+      <h1 class="index-title">
+        Взгляни на жизнь иначе
+      </h1>
       <div class="download">
-        <a class="download__btn btn" href="">Скачать приложение</a>
-          <div class="logo-image">
-            <a class="logo-image__link logo-image__link--osx" href="#">osx</a>
-            <a class="logo-image__link logo-image__link--android" href="#">android</a>
-            <a class=" logo-image__link logo-image__link--windows" href="#">windows</a>
+        <a class="download__btn btn" href="">
+          Скачать приложение
+        </a>
+          <div class="download__image">
+            <a class="download__image-link download__image-link--osx" href="#">
+              osx
+            </a>
+            <a class="download__image-link download__image-link--android" href="#">
+              android
+            </a>
+            <a class=" download__image-link download__image-link--windows" href="#">
+              windows
+            </a>
           </div>
         <p class="download__available">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </div>
-</header>
+  </header>
+
+  <h2 class="offer">
+    <span class="offer__text">
+      Устали от серости  мегаполиса?
+    </span>
+    <span class="offer__text">
+      Нам есть, что вам  предложить!
+    </span>
+  </h2>
+
+  <div class="fitches-content">
+    <div class="fitches-content__item">
+      <h3 class="fitches-content__title">
+        Поднимает настроение
+      </h3>
+      <p class="fitches-content__text">
+        Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+      </p>
+    </div>
+
+    <div class="fitches-content__item">
+      <h3 class="fitches-content__title">
+        Меняет мир вокруг
+      </h3>
+      <p class="fitches-content__text">
+        Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+      </p>
+    </div>
+
+    <div class="fitches-content__item">
+      <h3 class="fitches-content__title">
+        Заводите новых друзей
+      </h3>
+      <p class="fitches-content__text">
+        Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+      </p>
+    </div>
+  </div>
+
+  <div class="reviews">
+    <blockquote class="reviews__item">
+      <header class="reviews__header">
+        <p class="reviews__header--text">
+          Николай Петров
+        </p>
+      </header>
+        <p class="reviews__text">
+          &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+        </p>
+    </blockquote>
+
+<!--<div class="pagination">
+      <span class="pagination__item pagination__item--active"></span>
+      <span class="pagination__item"></span>
+      <span class="pagination__item"></span>
+    </div>-->
+  </div>
+
+  <div class="prices">
+    <div class="prices__wrap">
+      <table class="prices__table">
+
+        <tr class="prices__row">
+          <td>стандарт</td>
+          <td>3,99 USD</td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">розовый фильтр</td>
+          <td class="prices__cell ">
+            <span class="icon-up">yes</span>
+          </td>
+          <td class="prices__cell ">
+            <span class="icon-up">yes</span>
+          </td>
+          <td class="prices__cell ">
+            <span class="icon-up">yes</span>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">смайлики</td>
+          <td class="prices__cell ">
+            <span class="icon-down">no</span>
+          </td>
+          <td class="prices__cell ">
+            <span class="icon-up">yes</span>
+          </td>
+          <td class="prices__cell ">
+            <span class="icon-up">yes</span>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">комментарии</td>
+          <td class="prices__cell ">
+            <span class="icon-down">no</span>
+          </td>
+          <td class="prices__cell ">
+            <span class="icon-down">no</span>
+          </td>
+          <td class="prices__cell ">
+            <span class="icon-up">yes</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+<!--<div class="pagination">
+      <span class="pagination__item"></span>
+      <span class="pagination__item pagination__item--active"></span>
+      <span class="pagination__item"></span>
+    </div>-->
+
+  </div>
+
+  <section class="contacts">
+    <h3 class="contacts__title">
+      <span>Остались вопросы?</span>
+      <span>Свяжитесь с нами!</span>
+    </h3>
+
+    <div class="contacts__box">
+      <span class="contacts__text">Звоните:</span>
+      <a class="contacts__link" href="tel +7 (812)555-66-66">
+        +7 (812)555-66-66
+      </a>
+    </div>
+
+    <div class="contacts-index__box">
+      <span class="contacts__text">Пишите:</span>
+      <a class="contacts__link" href="mailto:mail@htmlacademy">
+        mail@htmlacademy
+      </a>
+    </div>
+
+    <div class="contacts__box">
+      <span class="contacts__text">Приежайте в гости:</span>
+      <a class="contacts__link" href="#">
+        ул.Большая Конюшенная, 19/8
+      </a>
+    </div>
+  </section>
+
+  <div class="map"></div>
+
+  <footer class="footer">
+    <div class="footer__logo"></div>
+
+      <div class="footer__social">
+        <a class="footer__social--icon footer__social--tw" href="#">
+          tw
+        </a>
+        <a class="footer__social--icon footer__social--fb" href="#">
+          fb
+        </a>
+        <a class="footer__social--icon footer__social--youtube" href="#">
+          youtube
+        </a>
+      </div>
+
+      <div class="footer__logo-acad">
+        <span class="footer__logo-acad--text"></span>
+      </div>
+  </footer>
 
 
-@@include('blocks/page-footer/page-footer.html')
-@@include('_include/page_bottom.html')
+<!--@ @include('blocks/page-footer/page-footer.html')
+@ @include('_include/page_bottom.html')-->
+
 </body>
 </html>

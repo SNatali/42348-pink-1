@@ -7,19 +7,24 @@
   display: flex;
   flex-direction: column;
 
-//@media @tablet-widths {}
-//@media @desktop-widths {}
+  @media all and (min-width:700px){
 
-
-
-
-  &__inner {
+  }
+  @media all and (min-width: 1200px){
     display: flex;
     flex-direction: column;
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    background: #ccc;
 
-//@media @tablet-widths {}
-//@media @desktop-widths {}
+   @media all and (min-width:700px){
 
-
- }
+  }
+   @media all and (min-width: 1200px){
+     display: flex;
+     flex-direction: row;
+  }
+  }
 }

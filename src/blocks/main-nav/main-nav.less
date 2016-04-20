@@ -4,39 +4,67 @@
 
 
 .main-nav {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 3em;
-  background-color: #777;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
 
-//@media @tablet-widths {}
-//@media @desktop-widths {}
+  @media all and (min-width:700px){}
 
-  &__list {
-  	display: flex;
-  	flex-direction: column;
-  	//justtify-content: center;
-  	margin: 0;
-  	list-style: none;
+   @media all and (min-width: 1200px){}
 
-//@media @tablet-widths {}
-//@media @desktop-widths {}
+
+
+  &__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+   right: 0;
+    left: 0;
+    //display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  &--visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
+    @media all and (min-width:700px){}
+
+    @media all and (min-width: 1200px){
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+}
+
+
 
   &__item{
+    display:block;
 
+    @media all and (min-width: 700px){}
 
-//@media @tablet-widths {}
-//@media @desktop-widths {}
+    @media all and (min-width: 1200px){}
+
   }
+
+
 
   &__link{
+    display:flex;
+    justify-content: center;
 
-&:hover {}
-//@media @tablet-widths {}
-//@media @desktop-widths {}
+    &:hover {}
+
+    @media all and (min-width: 700px){}
+
+    @media all and (min-width: 1200px){}
+
   }
-
 }
 

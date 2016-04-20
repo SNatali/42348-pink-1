@@ -3,6 +3,16 @@
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
 
-.logo {
-  background-color: #000;
+.logo{
+  display: flex;
+  justify-content: flex-start;
+
+   @media all and (min-width:700px){
+
+  }
+   @media all and (min-width: 1200px){
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }

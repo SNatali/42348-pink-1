@@ -1,0 +1,81 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/download/download.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.download {
+  display: flex;
+  flex-direction: column;
+
+  @media all and  @tablet-widths {
+
+  }
+  @media all and (min-width: 1200px) {
+
+  }
+
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+
+  @media all and (min-width:700px) {
+     justify-content: flex-start;
+  }
+  @media all and (min-width: 1200px) {
+      justify-content: flex-start;
+  }
+}
+
+
+  &__available{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  @media all and (min-width:700px) {
+     justify-content: flex-start;
+  }
+  @media all and (min-width: 1200px) {
+      justify-content: flex-start;
+  }
+  }
+}
+
+
+.download__image {
+    display: flex;
+    justify-content: center;
+
+  @media all and (min-width:700px) {
+     justify-content: flex-start;
+  }
+  @media all and (min-width: 1200px) {
+      justify-content: flex-start;
+  }
+
+
+  &-link {
+    background: #000;
+
+  @media all and (min-width:700px) {
+
+  }
+  @media all and (min-width: 1200px) {
+
+  }
+}
+
+
+  &-link--osx {
+
+  }
+  &-link--android {
+
+  }
+  &-link--windows {
+
+  }
+
+  }
+

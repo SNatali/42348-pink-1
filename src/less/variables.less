@@ -2,20 +2,19 @@
 
 @dark_blue:                   rgb(29, 38, 49);
 @white:                       rgb(255, 255, 255);
-@pink: rgb(210, 40, 86);
-@dack_blue_grey: #283645;
-@light_pink_bg: rgb(242, 242, 242);
-@grey: rgb(190, 194, 199);
-@green: rgb(42, 171, 109);
-
-@light-grey: rgb(229, 229, 229);
+@pink:                        rgb(210, 40, 86);
+@dack_blue_grey:              #283645;
+@light_pink_bg:               rgb(242, 242, 242);
+@grey:                        rgb(190, 194, 199);
+@green:                       rgb(42, 171, 109);
+@light-grey:                  rgb(229, 229, 229);
 
 
 
 // Семантические цвета
 
-@text-color:                  #000;
-@body-bg:                     #fff;
+@text-color:                  @dack_blue_grey;
+@body-bg:                     @white;
 
 @link-color:                  blue;
 @link-color--hover:           darken(blue, 15%);
@@ -25,7 +24,7 @@
 // Базовая типографика (<=479: 1 rem = 8px, >=480: 1rem = 10px)
 // Для лёгкого пересчёта: http://pxtoem.com/
 
-@font-size:                   14px;
+@font-size:                   1em;
 // @font-size--h1:               2.250em; // 3.6rem;
 // @font-size--h2:               1.875em; // 3rem;
 // @font-size--h3:               1.500em; // 2.4rem;
@@ -33,7 +32,7 @@
 // @font-size--h5:               1em;     // 1.6rem
 // @font-size--h6:               1em;     // 1.6rem
 
-@line-height:                 1.375em;
+@line-height:                 1.35em;
 
 @font-family:                 'Open sana', Arial, sans-serif;
 
@@ -44,3 +43,6 @@
 @screen-xs:                   0;
 @screen-sm:                   768px;
 @screen-md:                   1200px;
+
+@tablet-widths: ~"(min-width: 700px)";
+@desktop-widths: ~"(min-width: 1200px)";
