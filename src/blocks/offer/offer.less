@@ -1,0 +1,49 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/offer/offer.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  >span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 50px;
+    font-size: @font-size+0.75;
+
+    @media all and  (min-width:700px){
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: @font-size+0.75;
+    }
+    @media all and (min-width: 1200px) {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: @font-size+0.75;
+  }
+}
+
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 50px;
+    font-size: @font-size+0.75;
+
+    @media all and  (min-width:700px) {
+      padding: 0 150px;
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+}
+}

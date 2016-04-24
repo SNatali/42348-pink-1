@@ -6,22 +6,38 @@
 .download {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 3;
+  background:  @dack_blue_grey;
+  margin-top: 130px;
+  padding: 25px 0;
 
-  @media all and  @tablet-widths {
-
+  @media all and  (min-width:700px) {
+    background: transparent;
+    margin-top: 0;
   }
   @media all and (min-width: 1200px) {
-
+    background: transparent;
+    margin-top: 0;
   }
 
 
   &__btn {
     display: flex;
     justify-content: center;
+    border: 3px solid @white;
+    border-radius: 50px;
+    background: transparent;
+    padding: 15px 35px;
+    font-size: 18px;
+    color: @white;
+    line-height: 18px;
+    //width: 280px;
 
   @media all and (min-width:700px) {
-     justify-content: flex-start;
-  }
+     justify-content: center;
+     width: 300px;
+   }
   @media all and (min-width: 1200px) {
       justify-content: flex-start;
   }
@@ -31,10 +47,19 @@
   &__available{
     display: flex;
     justify-content: center;
+    vertical-align: center;
     text-align: center;
+    color: @white;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 50px;
+
 
   @media all and (min-width:700px) {
      justify-content: flex-start;
+     width: 290px;
+     padding: 0;
   }
   @media all and (min-width: 1200px) {
       justify-content: flex-start;
@@ -45,10 +70,13 @@
 
 .download__image {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    //font-size: 0;
 
   @media all and (min-width:700px) {
-     justify-content: flex-start;
+     justify-content: space-around;
+     width: 300px;
   }
   @media all and (min-width: 1200px) {
       justify-content: flex-start;
@@ -56,7 +84,7 @@
 
 
   &-link {
-    background: #000;
+    font-size: 14px;
 
   @media all and (min-width:700px) {
 

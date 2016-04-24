@@ -10,11 +10,14 @@
 
   @media all and (min-width:700px){}
 
-   @media all and (min-width: 1200px){}
+   @media all and (min-width: 1200px){
+    flex-grow:2;
+   }
 
 
 
   &__list{
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -44,27 +47,46 @@
 
 
 
-  &__item{
-    display:block;
+  &__item {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid @border-link-top;
+    border-bottom: 1px solid @border-link-bottom;
 
     @media all and (min-width: 700px){}
 
-    @media all and (min-width: 1200px){}
+    @media all and (min-width: 1200px){
+      border-top: none;
+      border-bottom: none;
+
+    }
 
   }
 
 
 
-  &__link{
-    display:flex;
-    justify-content: center;
+  &__link {
+    display: block;
+    padding: 12px 21px;
+    padding-bottom: 13px;
+
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: transparent;
+
 
     &:hover {}
 
     @media all and (min-width: 700px){}
 
-    @media all and (min-width: 1200px){}
-
+    @media all and (min-width: 1200px){
+      text-transform: none;
+      line-height: 18px;
+    }
   }
 }
 

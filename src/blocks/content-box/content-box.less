@@ -1,0 +1,19 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/content-box/content-box.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.content-box {
+  display: none;
+
+  @media all and  (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+ 			//justify-content: flex-end;
+}
+  @media all and (min-width: 1200px) {
+  	display: flex;
+  	flex-direction: column;
+}
+
+}
