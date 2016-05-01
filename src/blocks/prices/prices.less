@@ -1,0 +1,130 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/prices/prices.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.prices {
+  background-color: @light_pink_bg;
+  position: relative;
+
+ @media all and  (min-width: 700px) {
+
+}
+  @media all and (min-width: 1200px) {
+
+}
+
+
+  &-wrap{
+
+
+  @media all and  (min-width: 700px) {
+
+}
+  @media all and (min-width: 1200px) {
+
+}
+}
+
+
+  &-table{
+    border-collapse: collapse;
+    margin: 0;
+    //border: 2px solid black;
+
+  @media all and  (min-width: 700px) {
+
+}
+  @media all and (min-width: 1200px) {
+
+}
+  }
+
+
+  &-table__header{
+    background: @dack_blue_grey;
+    color: @white;
+    @media all and  (min-width: 700px) {
+
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+  }
+
+
+  &-table__header-row{
+
+    @media all and  (min-width: 700px) {
+
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+  }
+
+  &-table__header-cell{
+       border: 2px solid #ccc;
+
+    @media all and  (min-width: 700px) {
+
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+  }
+
+
+  &-table__body{
+
+    @media all and  (min-width: 700px) {
+
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+}
+
+
+  &-table__body-row{
+
+    @media all and  (min-width: 700px) {
+
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+}
+
+ &-table__body-cell{
+
+    @media all and  (min-width: 700px) {
+
+  }
+    @media all and (min-width: 1200px) {
+
+  }
+}
+}
+
+
+.prices::before{
+  content: "";
+  display: block;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 94px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -59px;
+  left: 0;
+  right: 0;
+
+    @media all and  (min-width: 700px) {
+
+}
+    @media all and (min-width: 1200px) {
+
+}
+}

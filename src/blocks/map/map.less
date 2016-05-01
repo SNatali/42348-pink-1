@@ -1,0 +1,41 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/map/map.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.map {
+  background: url("../img/bg-map.png") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 421px;
+  position: relative;
+
+  @media all and  (min-width:700px) {
+
+  }
+  @media all and (min-width: 1200px) {
+
+  }
+}
+
+
+.map::before{
+  content: "";
+  display: block;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 61px;
+  //transform: rotate(180deg);
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+
+    @media all and  (min-width: 700px) {
+
+}
+    @media all and (min-width: 1200px) {
+
+}
+}

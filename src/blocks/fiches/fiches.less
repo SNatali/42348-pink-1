@@ -6,12 +6,22 @@
 .fiches {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding-top: 20px;
+  //padding-bottom: 33px;
+  background-color: @light_pink_bg;
+  position: relative;
+  //justify-content: space-around;
+
 
  	@media all and  (min-width:700px) {
- 	//flex-direction: column;
- 	  //display: flex;
- 		//justify-content: flex-end;
+   	flex-direction: row-reverse;
+   	display: flex;
+    padding-top: 0;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+
   }
   @media all and (min-width: 1200px) {
     	display: flex;
@@ -19,13 +29,42 @@
     	justify-content: space-around;
   }
 
-  &__item {
 
+  &-wrap{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: @light_pink_bg;
+
+
+  @media all and  (min-width:700px) {
+    display: flex;
+    justuify-content: flex-end;
+    padding-top: 0;
+    width: 50%;
+  }
+  @media all and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  }
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
  	@media all and  (min-width: 700px) {
-  	//display: flex;
- 		//justify-content: flex-end;
- 		//flex-direction: column;
+  	display: flex;
+ 		justify-content: flex-end;
+ 		flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+
 
   }
   @media all and (min-width: 1200px) {
@@ -36,11 +75,16 @@
   }
 
  	&__title {
- 		display: flex;
- 		justify-content: center;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
 
  	@media all and  (min-width: 700px) {
-
+    text-align: left;
  			//justify-content: flex-start;
 }
   @media all and (min-width: 1200px) {
@@ -49,11 +93,17 @@
  	}
 
 
- 	&__text{
- 		display: flex;
- 		justify-content: center;
+ 	&__text {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+
 
  		@media all and  (min-width: 700px) {
+      text-align: left;
+      margin: 0;
  			//display: flex;
  			//justify-content: flex-end;
 }
@@ -61,4 +111,27 @@
 
 }
  	}
+}
+
+
+.fiches::before{
+  content: "";
+  display: block;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 94px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -59px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+    @media all and  (min-width: 700px) {
+
+}
+    @media all and (min-width: 1200px) {
+
+}
 }

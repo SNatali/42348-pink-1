@@ -1,0 +1,58 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/iphone-mobile/iphone-mobile.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.iphone {
+  display: block;
+  margin: 0 auto;
+
+   @media all and  (min-width:700px) {
+    display: flex;
+     padding-top: 0;
+     margin: 0;
+     width: 45%;
+      margin-right: 5%;
+   }
+
+
+  @media all and (min-width: 1200px) {
+
+   }
+
+
+  &__mobile {
+    height: 276px;
+    overflow: hidden;
+    padding-top: 40px;
+
+    @media all and  (min-width:700px) {
+      display: none;
+   }
+    @media all and (min-width: 1200px){
+      display: none;
+   }
+}
+  &__tablet  {
+    display: none;
+
+    @media all and  (min-width:700px) {
+      display: block;
+      position: absolute;
+      top: -40px;
+      z-index: 2;
+      height: 437px;
+      overflow: hidden;
+   }
+    @media all and (min-width: 1200px){
+      display: none;
+   }
+  }
+}
+
+   .iphone__mobile  img,
+   .iphone__tablet img{
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }

@@ -23,26 +23,38 @@
     margin: 0;
     position: relative;
     top: 0;
-   right: 0;
+    right: 0;
     left: 0;
     //display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-  &--visible {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+    .js &{
+      display: none;
+    }
 
-    @media all and (min-width:700px){}
+    .js &--visible {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: @text-color;
 
-    @media all and (min-width: 1200px){
+
+    @media all and (min-width:700px) {
+
+    }
+
+    @media all and (min-width: 1200px) {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
   }
+ }
 }
 
 
@@ -81,7 +93,9 @@
 
     &:hover {}
 
-    @media all and (min-width: 700px){}
+    @media all and (min-width: 700px){
+      padding: 20px 21px;
+    }
 
     @media all and (min-width: 1200px){
       text-transform: none;

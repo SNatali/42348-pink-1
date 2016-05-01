@@ -6,19 +6,28 @@
 .download {
   display: flex;
   flex-direction: column;
-  position: relative;
+  width: auto;
+  position: absolute;
+  bottom: -128px;
+  left: 0;
+  right: 0;
   z-index: 3;
   background:  @dack_blue_grey;
-  margin-top: 130px;
-  padding: 25px 0;
+  padding: 25px 20px;
+
 
   @media all and  (min-width:700px) {
     background: transparent;
     margin-top: 0;
+    bottom: -50px;
+    left: 40px;
   }
   @media all and (min-width: 1200px) {
     background: transparent;
+    position: absolute;
     margin-top: 0;
+    bottom: 200px;
+    left: 130px;
   }
 
 
@@ -53,13 +62,14 @@
     font-size: 14px;
     line-height: 24px;
     margin: 0;
-    padding: 0 50px;
+    //padding: 0 50px;
 
 
   @media all and (min-width:700px) {
      justify-content: flex-start;
-     width: 290px;
+     width: 300px;
      padding: 0;
+     font-size: 18px;
   }
   @media all and (min-width: 1200px) {
       justify-content: flex-start;
@@ -72,6 +82,7 @@
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+    align-items: flex-end;
     //font-size: 0;
 
   @media all and (min-width:700px) {

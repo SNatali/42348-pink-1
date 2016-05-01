@@ -1,4 +1,5 @@
 var toggler = document.getElementById('toggler-nav');
+
 toggler.onclick = function(e){
   e.preventDefault();
   toggler.classList.toggle('toggler-nav--close');

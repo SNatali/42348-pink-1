@@ -6,6 +6,8 @@
 .reviews {
   display: flex;
   justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media all and  (min-width: 700px) {
 
@@ -18,6 +20,8 @@
   &__item {
     display: flex;
     flex-direction:column;
+    margin: 0;
+    padding: 0;
 
   @media all and  (min-width: 700px) {
 
@@ -31,6 +35,12 @@
   &__text {
     display: flex;
     justify-content: center;
+    order: 2;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 20px;
 
   @media all and  (min-width: 700px) {
 
@@ -44,7 +54,7 @@
   &__footer {
     display: flex;
     flex-direction: column;
-
+    order: 1;
 
 
   @media all and  (min-width: 700px) {
@@ -53,12 +63,13 @@
   @media all and (min-width: 1200px) {
 
 }
-}
-
+ }
 
   &__footer--text {
     display: flex;
     justify-content: center;
+    font-size: 18px;
+    line-height: 30px;
 
     &:last-child {
       display: none;
@@ -68,14 +79,8 @@
 }
   @media all and (min-width: 1200px) {
       display: flex;
+
 }
 }
 }
-
-
-
-
-
-
-
 }

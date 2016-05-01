@@ -6,6 +6,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media all and (min-width:700px){
 
@@ -30,7 +31,7 @@
      display: flex;
      flex-direction: row;
      background: fade(@dack_blue_grey, 80%);
-     //width: 940px;
+
   }
   }
 }
@@ -38,7 +39,6 @@
 
 .page-header::before {
   content: "";
-  display: table;
   position: absolute;
   z-index: 1;
   background: @dack_blue_grey url("../img/bg-back-mobile.jpg") no-repeat center top / 699px auto;
@@ -51,9 +51,9 @@
 
 @media @tablet-widths {
   background: @dack_blue_grey url("../img/bg-back-mobile.jpg") no-repeat center top / 701px auto;
-  min-height: 728px;
+  min-height: 765px;
   width: 100%;
-  height: 727px;
+  height: 765px;
    background-size: cover;
   }
 @media @desktop-widths {
@@ -68,9 +68,8 @@
 
 .page-header::after {
   content: "";
-  display: block;
   position: absolute;
-  top: 100px;
+  top: 180px;
   left: 0;
   z-index: 1;
   background: url("../img/iphone-hand-mobile.png") no-repeat top center;
@@ -83,7 +82,7 @@
   height: 545px;
   z-index: 1;
   left: 0;
-  top: 183px;
+  top: 220px;
   }
   @media @desktop-widths {
     background:  url("../img/iphone-hand-desktop@1x.png") no-repeat top center;
