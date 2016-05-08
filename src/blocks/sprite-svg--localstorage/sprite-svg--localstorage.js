@@ -2,7 +2,7 @@
   'use strict';
 
   var file     = 'img/sprite-svg--ls.svg', // URL файла относительно страницы, на которой он используется (можно — абсолютный)
-      revision = 1;                        // Номер ревизии (сменить при обновлении спрайта)
+      revision = 2;                        // Номер ревизии (сменить при обновлении спрайта)
 
   if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect ) {
     return true;

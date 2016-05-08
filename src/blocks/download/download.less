@@ -2,32 +2,47 @@
 
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
+.download-wrap{
+  display: flex;
+  flex-direction: column;
+
+  @media all and  (min-width:700px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+  }
+}
+
 
 .download {
   display: flex;
   flex-direction: column;
   width: auto;
-  position: absolute;
-  bottom: -128px;
-  left: 0;
-  right: 0;
   z-index: 3;
   background:  @dack_blue_grey;
   padding: 25px 20px;
-
+  margin-top: 380px;
 
   @media all and  (min-width:700px) {
     background: transparent;
     margin-top: 0;
-    bottom: -50px;
-    left: 40px;
+    width: 380px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 134px;
+
   }
   @media all and (min-width: 1200px) {
     background: transparent;
-    position: absolute;
+    padding: 45px 20px;
+    //position: absolute;
     margin-top: 0;
-    bottom: 200px;
-    left: 130px;
+    //bottom: 200px;
+    //left: 130px;
   }
 
 
@@ -49,6 +64,8 @@
    }
   @media all and (min-width: 1200px) {
       justify-content: flex-start;
+      font-size: 21px;
+      line-height: 24px;
   }
 }
 
@@ -91,6 +108,7 @@
   }
   @media all and (min-width: 1200px) {
       justify-content: flex-start;
+      padding: 50px 0;
   }
 
 

@@ -9,27 +9,14 @@
   @media all and  (min-width: 700px) {
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
   }
   @media all and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
   }
-
-
-  &__img{
-    display: none;
-
-  @media all and  (min-width: 700px)  {
-    display: flex;
-    width: 45%;
-    margin-right: 5%;
-  }
-  @media all and (min-width: 1200px)  {
-
-  }
-}
 
 
   &__wrap{
@@ -38,7 +25,9 @@
   @media all and  (min-width: 700px)  {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 46%;
+    margin-left: 16%;
+    margin-top: 103px;
   }
   @media all and (min-width: 1200px)  {
 
@@ -52,6 +41,10 @@
   @media all and  (min-width: 700px)  {
     display: flex;
     margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    width: 170px;
+    padding-bottom: 18px;
   }
   @media all and (min-width: 1200px)  {
 
@@ -65,10 +58,80 @@
   @media all and  (min-width: 700px)  {
     display: flex;
     margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 13px;
   }
   @media all and (min-width: 1200px)  {
 
   }
 }
 
+
+ &__link{
+    display: none;
+
+  @media all and  (min-width: 700px) {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: @pink;
+    text-decoration: underline;
+  }
+  @media all and (min-width: 1200px) {
+
+  }
+  }
 }
+
+
+.content-box::before {
+  display: none;
+
+@media all and  (min-width: 700px) {
+  content: "24";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 96px;
+  line-height: 148px;
+  font-weight: bold;
+  color: @pink;
+  height: 200px;
+  width: 200px;
+  border: 14px solid @pink;
+  border-radius: 50%;
+  margin-top: 118px;
+  margin-left: 20px;
+  z-index: 2;
+}
+ @media all and (min-width: 1200px)  {
+
+  }
+}
+
+.content-box::after {
+  display: none;
+
+  @media all and  (min-width: 700px){
+  content: "";
+  display: flex;
+  background-image: url("../img/icon-timer.svg") ;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 6%;
+  width: 240px;
+  height: 398px;
+  z-index: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+

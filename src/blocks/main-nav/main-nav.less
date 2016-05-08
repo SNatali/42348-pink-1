@@ -11,7 +11,7 @@
   @media all and (min-width:700px){}
 
    @media all and (min-width: 1200px){
-    flex-grow:2;
+    padding-right: 130px;
    }
 
 
@@ -30,6 +30,14 @@
     flex-direction: column;
     justify-content: center;
 
+    @media all and (min-width:700px){
+
+    }
+
+    @media all and (min-width: 1200px) {
+
+
+  }
     .js &{
       display: none;
     }
@@ -46,13 +54,18 @@
 
 
     @media all and (min-width:700px) {
-
+       top: 100px;
     }
 
     @media all and (min-width: 1200px) {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+      position: static;
+      display: flex;
+      flex-direction: row;
+      background: transparent;
+    //display: flex;
+    //justify-content: flex-end;
+    //lex-direction: row;
+
   }
  }
 }
