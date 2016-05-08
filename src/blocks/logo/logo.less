@@ -10,59 +10,59 @@
   width: 200px;
   //.container();
 
-    @media all and (min-width: 700px){
+    @media (min-width: 700px){
       padding-top: 23px;
       padding-bottom: 37px;
       padding-left: 40px;
   }
 
-    @media all and (min-width: 1200px){
+    @media (min-width: 1200px){
       display: flex;
       flex-direction: column;
       flex-grow: 1;
       //padding-left: 130px;
   }
-
-
-  &-mobile {
-    opacity: 1;
-
-    @media all and (min-width: 700px){
-      opacity: 0;
 }
 
-    @media all and (min-width: 1200px){
-      opacity: 0;
-  }
-  }
+  .logo-mobile {
+   display: block;
 
-
-  &-tablet {
-    opacity: 0;
-
-   @media all and (min-width: 700px){
-    opacity: 1;
-
+    @media (min-width: 700px){
+    display: none;
 }
-   @media all and (min-width: 1200px){
-    opacity: 0;
-  }
-   }
 
-
-  &-desktop {
-    opacity: 0;
-
-   @media all and (min-width: 700px){
-    opacity: 0;
-
-}
-   @media all and (min-width: 1200px){
-    opacity: 1;
+    @media (min-width: 1200px){
+     display: none;
   }
   }
 
-}
+
+ // .logo-tablet {
+  // display: none;
+
+  // @media (min-width: 700px){
+  // display: block;
+
+//}
+  // @media (min-width: 1200px){
+  // display: none;
+//  }
+ //  }
+
+
+ // .logo-desktop {
+ //  display: none;
+
+ //  @media (min-width: 700px){
+ //   display: none;
+
+//}
+ //  @media (min-width: 1200px){
+ //   display: block;
+//  }
+//}
+
+
 
 
 .logo svg{
