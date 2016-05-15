@@ -37,6 +37,19 @@
   margin: 0;
   width: 263%;
   transform: translateX(-31%);
+  transition: transform 0.3s;
+
+  #tarif_01:checked ~ & {
+    transform: translateX(2%);
+  }
+
+  #tarif_02:checked ~ & {
+    transform: translateX(-31%);
+  }
+
+  #tarif_03:checked ~ & {
+    transform: translateX(-70%);
+  }
 
 @media  (min-width: @screen-sm) {
   width: 100%;
