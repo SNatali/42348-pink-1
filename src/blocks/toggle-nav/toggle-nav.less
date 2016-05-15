@@ -4,7 +4,7 @@
 
 
 .toggler-nav {
-   position: absolute;
+  position: absolute;
   z-index: 1;
   top: 18px;
   right: 20px;
@@ -14,6 +14,7 @@
   height: 24px;
   line-height: 3em;
   user-select: none;
+  transition: all .3s;
 
   > span {
     display: inline-block;
@@ -72,18 +73,16 @@
     }
   }
 }
-  @media all and (min-width:700px) {
+  @media  (min-width: @screen-sm) {
     .toggler-nav {
       top: 28px;
       right: 40px;
     }
-
   }
-  @media all and (min-width: 1200px) {
+  @media  (min-width: @screen-md) {
     .toggler-nav{
        display:none;
- }
-
-}
+    }
+  }
 
 

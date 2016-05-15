@@ -11,11 +11,11 @@
   padding-left: 6%;
   padding-right: 6%;
 
-  @media all and  (min-width:700px) {
-
-  }
-  @media all and (min-width: 1200px) {
-
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    padding-left: 11%;
+    padding-right: 11%;
+    margin-top: 70px;
   }
 
 
@@ -23,8 +23,8 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: (@font-size+10);
+    line-height: (@line-height+18);
     font-weight: normal;
 
     span {
@@ -32,11 +32,10 @@
       justify-content: center;
     }
 
-  @media all and  (min-width:700px) {
-
-  }
-  @media all and (min-width: 1200px) {
-
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    font-size: (@font-size+36);
+    line-height: (@line-height+47);
   }
 }
 
@@ -46,18 +45,17 @@
     flex-direction: column;
     margin-top: 35px;
 
-  @media all and  (min-width:700px) {
+  @media  (min-width: @screen-sm) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  @media all and (min-width: 1200px) {
+  @media  (min-width: @screen-md) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-
-  }
+}
 
 
   &__box {
@@ -68,27 +66,45 @@
     padding-left: 20px;
     padding-right: 20px;
 
-  @media all and  (min-width:700px) {
+    &:nth-of-type(1) {
 
-  }
-  @media all and (min-width: 1200px) {
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {
+      order: 1;
+    }
+    }
 
-  }
+    &:nth-of-type(2) {
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {
+      order: 3;
+    }
+    }
+
+    &:nth-of-type(3) {
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {
+      order: 2;
+    }
+    }
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
 }
 
 
    &__text {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: (@font-size+4);
     font-weight: bold;
-    line-height: 32px;
+    line-height: (@line-height+14);
 
-  @media all and  (min-width:700px) {
-
-  }
-  @media all and (min-width: 1200px) {
-
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    padding-bottom: 27px;
   }
 }
 
@@ -97,18 +113,13 @@
     display: flex;
     justify-content: center;
     color: @pink;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: (@font-size+10);
+    line-height: (@line-height+14);
     text-align: center;
 
-
-  @media all and  (min-width:700px) {
-
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
   }
-  @media all and (min-width: 1200px) {
-
-  }
-}
 }
 
 

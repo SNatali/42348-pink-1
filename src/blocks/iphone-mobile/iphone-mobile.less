@@ -7,44 +7,30 @@
   display: block;
   margin: 0 auto;
 
-   @media all and  (min-width:700px) {
+  @media  (min-width: @screen-sm) {
     display: flex;
-     padding-top: 0;
-     margin: 0;
-     width: 45%;
-      margin-right: 5%;
-   }
-
-
-  @media all and (min-width: 1200px) {
-
-   }
+    padding-top: 0;
+    margin: 0;
+    width: 45%;
+    margin-right: 5%;
+  }
+  @media  (min-width: @screen-md) {}
 
 
   &__mobile {
-    //height: 276px;
-    //overflow: hidden;
-    //padding-top: 40px;
 
-    @media all and  (min-width:700px) {
+    @media  (min-width: @screen-sm) {
       display: none;
    }
-    @media all and (min-width: 1200px){
+    @media  (min-width: @screen-md){
       display: none;
    }
 }
-  &__tablet  {
+  &__tablet {
     display: none;
 
-    @media all and  (min-width:700px) {
-      //display: block;
-      //position: absolute;
-      //top: -40px;
-      //z-index: 2;
-      //height: 437px;
-      //overflow: hidden;
-   }
-    @media all and (min-width: 1200px){
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md){
       display: none;
    }
   }

@@ -4,19 +4,17 @@
 
 
 .main-nav {
- display: flex;
- justify-content: center;
- flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-  @media all and (min-width:700px){}
-
-   @media all and (min-width: 1200px){
-    padding-right: 130px;
-   }
-
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    margin-left: 100px;
+  }
 
 
-  &__list{
+  &__list {
     width: 100%;
     list-style: none;
     padding: 0;
@@ -25,51 +23,45 @@
     top: 0;
     right: 0;
     left: 0;
-    //display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @media all and (min-width:700px){
-
-    }
-
-    @media all and (min-width: 1200px) {
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
 
 
+  .js & {
+    display: none;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    display: flex;
+    flex-direction: row;
   }
-    .js &{
-      display: none;
-    }
-
-    .js &--visible {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      right: 0;
-      background: @text-color;
-
-
-    @media all and (min-width:700px) {
-       top: 100px;
-    }
-
-    @media all and (min-width: 1200px) {
-      position: static;
-      display: flex;
-      flex-direction: row;
-      background: transparent;
-    //display: flex;
-    //justify-content: flex-end;
-    //lex-direction: row;
-
   }
- }
+
+  .js &--visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: @text-color;
+
+  @media  (min-width: @screen-sm) {
+    top: 100px;
+  }
+  @media  (min-width: @screen-md) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+  }
 }
-
+}
 
 
   &__item {
@@ -78,42 +70,36 @@
     border-top: 1px solid @border-link-top;
     border-bottom: 1px solid @border-link-bottom;
 
-    @media all and (min-width: 700px){}
-
-    @media all and (min-width: 1200px){
-      border-top: none;
-      border-bottom: none;
-
-    }
-
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    border-top: none;
+    border-bottom: none;
   }
-
+}
 
 
   &__link {
     display: block;
     padding: 12px 21px;
     padding-bottom: 13px;
-
-    font-size: 18px;
-    line-height: 32px;
-    color: #ffffff;
+    font-size: (@font-size+4);
+    line-height: (@line-height+14);
+    color: @white;
     text-transform: uppercase;
     text-decoration: none;
-
     background-color: transparent;
 
+  &:hover {}
 
-    &:hover {}
-
-    @media all and (min-width: 700px){
-      padding: 20px 21px;
-    }
-
-    @media all and (min-width: 1200px){
-      text-transform: none;
-      line-height: 18px;
-    }
+  @media  (min-width: @screen-sm) {
+    padding: 20px 21px;
+  }
+  @media  (min-width: @screen-md) {
+    text-transform: none;
+    line-height: @line-height;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
   }
 }
 

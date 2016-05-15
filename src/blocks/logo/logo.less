@@ -3,70 +3,65 @@
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
 
-.logo{
+.logo {
   display: flex;
   justify-content: flex-start;
   padding: 20px 20px;
   width: 200px;
-  //.container();
 
-    @media (min-width: 700px){
-      padding-top: 23px;
-      padding-bottom: 37px;
-      padding-left: 40px;
-  }
-
-    @media (min-width: 1200px){
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      //padding-left: 130px;
-  }
+@media (min-width: @screen-sm) {
+  padding-top: 23px;
+  padding-bottom: 37px;
+  padding-left: 40px;
+}
+@media (min-width: @screen-md) {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
 }
 
-  .logo-mobile {
-   display: block;
 
-    @media (min-width: 700px){
-    display: none;
+.logo-mobile {
+  display: block;
+
+@media (min-width: @screen-sm) {
+  display: none;
+}
+@media (min-width: @screen-md) {
+  display: none;
+}
 }
 
-    @media (min-width: 1200px){
-     display: none;
-  }
-  }
+
+.logo-tablet {
+  display: none;
+
+@media (min-width: @screen-sm) {
+  display: block;
+}
+@media (min-width: @screen-md) {
+  display: none;
+}
+}
 
 
- // .logo-tablet {
-  // display: none;
+.logo-desktop {
+  display: none;
 
-  // @media (min-width: 700px){
-  // display: block;
-
-//}
-  // @media (min-width: 1200px){
-  // display: none;
-//  }
- //  }
-
-
- // .logo-desktop {
- //  display: none;
-
- //  @media (min-width: 700px){
- //   display: none;
-
-//}
- //  @media (min-width: 1200px){
- //   display: block;
-//  }
-//}
+@media (min-width: @screen-sm) {
+  display: none;
+}
+@media (min-width: @screen-md) {
+  display: block;
+}
+}
 
 
-
-
-.logo svg{
-
+.logo svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 

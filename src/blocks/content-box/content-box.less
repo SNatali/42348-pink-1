@@ -6,48 +6,54 @@
 .content-box {
   display: none;
 
-  @media all and  (min-width: 700px) {
+  @media  (min-width: @screen-sm) {
     display: flex;
     flex-direction: row;
     padding-left: 6%;
     padding-right: 6%;
     position: relative;
   }
-  @media all and (min-width: 1200px) {
+  @media  (min-width: @screen-md) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: @light_pink_bg;
+    padding-bottom: 70px;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 70px;
   }
 
 
-  &__wrap{
+  &__wrap {
     display: none;
 
-  @media all and  (min-width: 700px)  {
+  @media  (min-width: @screen-sm) {
     display: flex;
     flex-direction: column;
     width: 46%;
     margin-left: 16%;
     margin-top: 103px;
   }
-  @media all and (min-width: 1200px)  {
-
+  @media  (min-width: @screen-md) {
+    width: 53%;
+    margin-left: 12%;
   }
 }
 
 
-  &__title{
+  &__title {
     display: none;
 
-  @media all and  (min-width: 700px)  {
+  @media  (min-width: @screen-sm) {
     display: flex;
     margin: 0;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: (@font-size+16);
+    line-height: (@line-height+16);
     width: 170px;
     padding-bottom: 18px;
   }
-  @media all and (min-width: 1200px)  {
-
+  @media  (min-width: @screen-md) {
+    width: auto;
   }
 }
 
@@ -55,74 +61,87 @@
   &__text{
     display: none;
 
-  @media all and  (min-width: 700px)  {
+  @media  (min-width: @screen-sm) {
     display: flex;
     margin: 0;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: @font-size;
+    line-height: (@line-height+6);
     padding-bottom: 13px;
   }
-  @media all and (min-width: 1200px)  {
-
+  @media  (min-width: @screen-md) {
+    font-size: (@font-size+4);
+    line-height: (@line-height+12);
   }
 }
 
 
- &__link{
+  &__link{
     display: none;
 
-  @media all and  (min-width: 700px) {
+  @media  (min-width: @screen-sm) {
     display: block;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: @font-size;
+    line-height: (@line-height+6);
     color: @pink;
     text-decoration: underline;
   }
-  @media all and (min-width: 1200px) {
-
+  @media  (min-width: @screen-md) {
+    font-size: (@font-size+4);
+    line-height: (@line-height+12);
   }
+}
+}
+
+
+  .content-box::before {
+    display: none;
+
+  @media  (min-width: @screen-sm) {
+    content: "24";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: (@font-size+82);
+    line-height: (@line-height+130);
+    font-weight: bold;
+    color: @pink;
+    height: 200px;
+    width: 200px;
+    border: 14px solid @pink;
+    border-radius: 50%;
+    margin-top: 118px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+  @media  (min-width: @screen-md) {
+    font-size: (@font-size+106px);
+    line-height: (@line-height+167);
+    width: 260px;
+    height: 260px;
+    margin-top: 93px;
+    margin-left: 26px;
   }
 }
 
 
-.content-box::before {
-  display: none;
+  .content-box::after {
+    display: none;
 
-@media all and  (min-width: 700px) {
-  content: "24";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 96px;
-  line-height: 148px;
-  font-weight: bold;
-  color: @pink;
-  height: 200px;
-  width: 200px;
-  border: 14px solid @pink;
-  border-radius: 50%;
-  margin-top: 118px;
-  margin-left: 20px;
-  z-index: 2;
-}
- @media all and (min-width: 1200px)  {
-
+  @media  (min-width: @screen-sm) {
+    content: "";
+    display: flex;
+    background-image: url("../img/icon-timer.svg") ;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 6%;
+    width: 240px;
+    height: 398px;
+    z-index: 1;
   }
-}
-
-.content-box::after {
-  display: none;
-
-  @media all and  (min-width: 700px){
-  content: "";
-  display: flex;
-  background-image: url("../img/icon-timer.svg") ;
-  background-size: 100% 100%;
-  position: absolute;
-  left: 6%;
-  width: 240px;
-  height: 398px;
-  z-index: 1;
+  @media  (min-width: @screen-md) {
+    width: 314px;
+    height: 398px;
+    left: 130px;
   }
 }
 
