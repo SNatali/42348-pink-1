@@ -239,6 +239,7 @@ gulp.task('serve', gulp.series('build', function() {
     server: dirs.build,
     port: port,
     startPath: 'index.html'
+
   });
   gulp.watch([
     dirs.source + '/*.html',

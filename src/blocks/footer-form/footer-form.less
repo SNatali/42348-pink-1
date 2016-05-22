@@ -1,42 +1,39 @@
-// Для импорта в диспетчер подключений: @import './src/blocks/footer/footer.less';
+// Для импорта в диспетчер подключений: @import './src/blocks/footer-form/footer-form.less';
 
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
 
-.footer {
-  display: none;
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 @media  (min-width: @screen-sm) {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 36px;
-  padding-bottom: 40px;
-  padding-left: 6%;
-  padding-right: 6%;
-  }
-@media  (min-width: @screen-md) {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-left: 11%;
-  padding-right: 11%;
-  }
+  flex-direction: row;
+}
+@media  (min-width: @screen-md) {}
 
-
-  &__logoacad {
-    display: none;
+  &__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 38px;
 
   @media  (min-width: @screen-sm) {
-    display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
   }
   @media  (min-width: @screen-md) {}
   }
 
-  &__logoacad-link {
+  &__logo-link{
 
-    .logo-tablet {
-      display: none;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+
+     .logo-tablet {
+      display: block;
 
     @media  (min-width: @screen-sm) {
       display: block;
@@ -56,25 +53,19 @@
       display: block;
     }
     }
+
+  }
+
+  &__social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 44px;
+
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
 
-
-  &__social{
-    display: none;
-
-  @media  (min-width: @screen-sm) {
-    display: flex;
-  }
-  @media  (min-width: @screen-md) {}
-  }
-
-
-  &__social-icon {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__social-item{
     display: flex;
     width: 50px;
     height: 50px;
@@ -83,15 +74,12 @@
     margin-right: 12px;
     font-size: 0;
     position: relative;
-  }
+
+  @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
 
-
-  &__social-tw {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__social-tw{
     display: block;
     background: url("../img/icon-twitter.svg");
     width: 18px;
@@ -100,15 +88,12 @@
     position: absolute;
     top: 14px;
     left: 13px;
-  }
+
+  @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
 
-
-  &__social-fb {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__social-facebook{
     display: block;
     background: url("../img/icon-facebook.svg");
     width: 9px;
@@ -117,15 +102,12 @@
     position: absolute;
     top: 10px;
     left: 17px;
-  }
+
+  @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
 
-
-  &__social-youtube {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__social-youtub{
     display: block;
     background: url("../img/icon-youtube.svg");
     width: 15px;
@@ -134,50 +116,39 @@
     position: absolute;
     top: 14px;
     left: 17px;
-  }
+  @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
 
-
-  .footer__logo-acad {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__logotip{
     display: flex;
-  }
+    justify-content: center;
+    margin-bottom: 44px;
+
+  @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
 
-
-  .footer__logo-text {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__logotip-text{
     display: flex;
-    font-size: 14px;
-    line-height: 38px;
-    padding-right: 8px;
-  }
-  @media  (min-width: @screen-md) {
-    font-size: @font-size;
-    line-height: (@line-height+22);
-  }
+    align-items: center;
+     color: @dack_blue_grey;
+    font-size: @font-size ;
+    line-height: @line-height;
+    margin-right: 14px;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
   }
 
-
-  .footer__logo-link {
-    display: none;
-
-  @media  (min-width: @screen-sm) {
+  &__logotip-link{
     display: flex;
     background: url("../img/htmlacademy.svg");
     background-size: 100% 100%;
     width: 35px;
     height: 40px;
-  }
-  @media  (min-width: @screen-md) {
-    width: 42px;
-    height: 40px;
-  }
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
   }
 }

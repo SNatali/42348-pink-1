@@ -1,0 +1,28 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/field-textarea/field-textarea.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.field-textarea {
+  padding-left: 6%;
+  padding-right: 6%;
+@media  (min-width: @screen-sm){}
+@media  (min-width: @screen-md){}
+
+  &__input{
+    width: 100%;
+    height: 200px;
+    padding: 15px 20px 0 20px;
+    font-size: (@font-size+4);
+    line-height: (@line-height+12);
+    resize: none;
+    overflow: auto;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    color: @dack_blue_grey;
+
+    @media  (min-width: @screen-sm){}
+    @media  (min-width: @screen-md){}
+
+  }
+}

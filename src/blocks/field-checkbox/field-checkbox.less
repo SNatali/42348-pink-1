@@ -1,0 +1,65 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/field-checkbox/field-checkbox.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.field-checkbox {
+  display: flex;
+@media  (min-width: @screen-sm){}
+@media  (min-width: @screen-md){}
+
+&__input {
+cursor: pointer;
+margin-bottom: 37px;
+font-size: (@font-size+4);
+line-height: (@line-height+17);
+
+
+@media  (min-width: @screen-sm){}
+@media  (min-width: @screen-md){}
+}
+
+input[type="checkbox"] {
+  display: none;
+@media  (min-width: @screen-sm){}
+@media  (min-width: @screen-md){}
+}
+}
+
+.field-checkbox input[type="checkbox"]+span{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  background: @white;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  margin-right: 25px;
+
+  @media  (min-width: @screen-sm){}
+  @media  (min-width: @screen-md){}
+  }
+
+.field-checkbox input[type="checkbox"]:checked + span:before{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 7px;
+  left: 9px;
+  top: 10px;
+  border: 3px solid @pink;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  @media  (min-width: @screen-sm){}
+  @media  (min-width: @screen-md){}
+}
+
+
+
+
+

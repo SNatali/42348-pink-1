@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <!-- <link rel="stylesheet" href="css/normalize.css">-->
+     <link rel="stylesheet" href="css/style.min.css">
+     <meta name="description" content="">
+    @@include('_include/page_head.html')
+  </head>
+  <body>
 
-<head>
-<meta charset="utf-8">
-<title>Заголовок</title>
-<!--<link rel="stylesheet" href="css/normalize.css">-->
-<link rel="stylesheet" href="css/style.min.css">
-<meta name="description" content="">
-@@include('_include/page_head.html')
-</head>
-
-<body>
-<!--@@include('blocks/page-header/page-header.html')-->
-  <header class="page-header">
-    <div class="page-header__inner  menu-show" id="page-header">
+ <header class="form-header">
+    <div class="form-header__inner  menu-show" id="page-header">
       <a href="#" class="logo" >
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" >
           <g class="logo-mobile">
@@ -110,7 +108,7 @@
       </a>
       <ul class="main-nav__list" id="main-nav__list">
         <li class="main-nav__item main-nav__active">
-          <a class="main-nav__link" href="#">
+          <a class="main-nav__link" href="index.html">
             Главная
           </a>
         </li>
@@ -131,244 +129,183 @@
         </li>
       </ul>
     </nav>
+    <h1 class="form-title">
+      Конкурс на самое безбашеное путешествие с Пинк
+    </h1>
   </div>
-
-    <div class="download-wrap">
-      <h1 class="index-title">
-        Взгляните на жизнь иначе!
-      </h1>
-      <div class="download">
-        <a class="download__btn btn" href="#">
-          Скачать приложение
-        </a>
-        <div class="download__image">
-          <a class="download__image-link download__image-link--osx" href="#">
-            <svg width="47" height="56"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-apple"></use></svg>
-          </a>
-          <a class="download__image-link download__image-link--android" href="#">
-            <svg width="43" height="47"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-android"></use></svg>
-          </a>
-          <a class=" download__image-link download__image-link--windows" href="#">
-            <svg width="44" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-microsoft"></use></svg>
+  </header>
+    <!--<header class="form-header">
+      <div class="form-header__inner header-wrap">
+          <div class="logo">
+          <a class="logo__link" href="index.html">
+           Pink
           </a>
         </div>
+        <nav class="nav-wrap">
+          <ul class="nav-main">
+            <li class="nav-main__item">
+              <a class="nav-main__link">Главная</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link">Фотографии</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link">Конкурс</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link">HTMLACADEMY</a>
+            </li>
+          </ul>
+        </nav>
 
-        <p class="download__available">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </div>
-    </div>
-  </header>
-
-  <h2 class="offer">
-    <span class="offer__text">
-      Устали от серости  мегаполиса?
-    </span>
-    <span class="offer__text">
-      Нам есть, что вам  предложить!
-    </span>
-  </h2>
-
-  <div class="fiches">
-    <div class="fiches-wrap">
-      <div class="fiches__item">
-        <h3 class="fiches__title">
-          Поднимает настроение
-        </h3>
-        <p class="fiches__text">
-          Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-        </p>
       </div>
 
-      <div class="fiches__item">
-        <h3 class="fiches__title">
-          Меняет мир вокруг
-        </h3>
-        <p class="fiches__text">
-          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-        </p>
-      </div>
+      <h1 class="form-title">
+      Конкурс на самое безбашеное путешествие с Пинк
+    </h1>
 
-      <div class="fiches__item">
-        <h3 class="fiches__title">
-          Заводите новых друзей
-        </h3>
-        <p class="fiches__text">
-          Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-        </p>
-      </div>
+
+    </header>-->
+     <main class="main-form">
+
+    <form class="content-form" action="/echo" method="post" enctype="multipart/form-data">
+      <fieldset class="content-form__fieldset">
+        <legend class="content-form__title-box">Поделитесь своей историей и  получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже!</span>
+        </legend>
+
+         <div class="field-text">
+          <label class="field-text__title" for="yourname">Имя:</label>
+          <input type="text" id="yourname" name="first-name" required placeholder="Введите ваше имя">
+        </div>
+
+        <div class="field-text">
+          <label class="field-text__title" for="surname">Фамилия:</label>
+          <input type="text" id="surname" name="second-name" required placeholder="Укажите фамилию">
+        </div>
+
+        <div class="field-text">
+          <label class="field-text__title" for="father-name">Отчество:</label>
+          <input type="text" id="father-name" name="third-name" placeholder="Ну и отчество тоже">
+        </div>
+      </fieldset>
+
+      <fieldset class="content-form__fieldset">
+        <div class="content-form__fieldset-wrap">
+          <legend class="content-form__title">
+          Ваши безбашенные достижения в путешествии
+          </legend>
+          <div class="field-checkbox">
+            <label class="field-checkbox__input" for="photo">
+             <input type="checkbox" name="self" id="photo" value="progress" checked>
+             <span></span>
+             Сделал селфи с акулой
+            </label>
+            </div>
+
+            <div class="field-checkbox">
+            <label class="field-checkbox__input" for="beach">
+              <input type="checkbox" name="sunburn" id="beach" value="progress" checked>
+              <span></span>
+              Обгорел на пляже
+              </label>
+            </div>
+            <div class="field-checkbox">
+            <label class="field-checkbox__input" for="saw">
+              <input type="checkbox" name="saw-сhack-noris" id="saw" value="progress">
+              <span></span>
+              Видел чака норриса
+            </label>
+            </div>
+            <div class="field-checkbox">
+            <label class="field-checkbox__input" for="buy">
+              <input type="checkbox" name="buy-souvenirs" id="buy" value="progress">
+              <span></span>
+              Накупил сувениров
+              </label>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__input" for="keep">
+              <input type="checkbox" name="keep-tower" id="keep" value="progress" checked>
+              <span></span>
+              Ужержал башню
+              </label>
+            </div>
+            <div class="field-checkbox">
+            <label class="field-checkbox__input" for="hotel">
+              <input type="checkbox" name="break-down-hotel" id="hotel" value="progress">
+              <span></span>
+              Разгромил отель
+            </label>
+            </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="content-form__fieldset">
+          <div class="field-text">
+          <label class="field-text__title" for="yourname">
+            Номер телефончика
+          </label>
+          <input type="tel" id="yourname" name="first-name" required placeholder="Номер, пожалуйста">
+        </div>
+
+        <div class="field-text">
+          <label class="field-text__title" for="surname">
+            Адресок почты
+          </label>
+          <input type="email" id="surname" name="second-name" required placeholder="E&ndash;mail, пожалуйста">
+        </div>
+        </fieldset>
+
+        <fieldset class="content-form__fieldset">
+          <div class="content-form__fieldset-wrap">
+        <legend class="content-form__title">
+          С какими приложением путешествовали?
+        </legend>
+
+          <div class="field-radio">
+
+            <input type="radio" name="pink" value="ios" id="forios" checked required>
+            <label class="field-radio__input" for="forios">Pink для iOS
+            </label>
+          </div>
+
+         <div class="field-radio">
+            <input type="radio" name="pink" value="android" id="forandroid" required>
+            <label class="field-radio__input" for="forandroid">Pink на Android
+            </label>
+          </div>
+
+          <div class="field-radio">
+            <input type="radio" name="pink" value="windows" id="forphone" required>
+            <label class="field-radio__input" for="forphone"> Windows Phone
+          </label>
+          </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="content-form__fieldset">
+          <legend class="content-form__title">Опишите свои эмоции</legend>
+            <div class="field-textarea">
+              <textarea class="field-textarea__input">Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </div>
+          </fieldset>
+            <div class="content-form__fieldset-wrap">
+              <a href="#" class="content-form__btn">
+              Отправить форму
+              </a>
+              <p class="content-form__subscribe-text">
+                <span>*</span> &mdash; обязательные поля
+              </p>
+            </div>
+      </form>
+
     </div>
-  </div>
+  </main>
 
-  <div class="content-box">
-    <div class="content-box__wrap">
-      <h3 class="content-box__title">
-          Эффект на 24 часа!
-      </h3>
-      <p class="content-box__text">
-        Британские ученые провели исследования и доказали,
-        что положительный эффект от использования приложения длится целые сутки!
-      </p>
-      <a class="content-box__link" href="#">
-        Узнать больше об исследовании
-      </a>
-    </div>
-  </div>
-
-  <div class="reviews">
-    <div class="owl-carousel">
-    <div class="items">
-      <blockquote class="reviews__item">
-        <p class="reviews__text">
-          &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-        </p>
-        <footer class="reviews__footer">
-          <span class="reviews__footer--text">
-            Николай Петров
-          </span>
-          <span class="reviews__footer--text">
-            25 лет, водитель трамвая
-          </span>
-        </footer>
-      </blockquote>
-    </div>
-    <div class="items">
-      <blockquote class="reviews__item">
-        <p class="reviews__text">
-          &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-        </p>
-        <footer class="reviews__footer">
-          <span class="reviews__footer--text">
-            Николай Петров
-          </span>
-          <span class="reviews__footer--text">
-            25 лет, водитель трамвая
-          </span>
-        </footer>
-      </blockquote>
-    </div>
-    </div>
-
-
-  </div>
-
-  <div class="prices">
-    <div class="prices-wrap">
-      <input class="pagination-radio" type="radio" id="tariff_01" checked name="table-position">
-      <input class="pagination-radio" type="radio" id="tariff_02" name="table-position">
-      <input class="pagination-radio" type="radio" id="tariff_03" name="table-position">
-      <table class="prices-table">
-        <thead class="prices-table__header">
-          <tr class="prices-table__header-row">
-            <td class="prices-table__header-cell"></td>
-            <td class="prices-table__header-cell mobile-tab">
-              <span>база</span>
-              <span>1,99 USD</span>
-            </td>
-            <td class="prices-table__header-cell mobile-cell">
-              <span>стандарт</span>
-              <span>3,99 USD</span>
-            </td>
-            <td class="prices-table__header-cell mobile-tab">
-              <span>анлим</span>
-              <span>9,99 USD</span>
-            </td>
-          </tr>
-        </thead>
-        <tbody class="prices-table__body">
-          <tr class="prices-table__body-row">
-            <td class="prices-table__body-cell">
-              Розовый фильтр
-            </td>
-            <td class="prices-table__body-cell ">
-              <span>Розовый фильтр</span>
-              <span class="icon-up">yes</span>
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Розовый фильтр</span>
-              <span class="icon-up">yes</span>
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Розовый фильтр</span>
-              <span class="icon-up">yes</span>
-            </td>
-          </tr>
-          <tr class="prices-table__body-row">
-            <td class="prices-table__body-cell">
-              Смайлики
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Смайлики</span>
-              <span class="icon-down">no</span>
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Смайлики</span>
-              <span class="icon-up">yes</span>
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Смайлики</span>
-              <span class="icon-up">yes</span>
-            </td>
-          </tr>
-          <tr class="prices-table__body-row">
-            <td class="prices-table__body-cell">
-              Комментарии
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Комментарии</span>
-              <span class="icon-down">no</span>
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Комментарии</span>
-              <span class="icon-down">no</span>
-            </td>
-            <td class="prices-table__body-cell">
-              <span>Комментарии</span>
-              <span class="icon-up">yes</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <label class="pagination-item" for="tariff_01"></label>
-      <label class="pagination-item" for="tariff_02"></label>
-      <label class="pagination-item" for="tariff_03"></label>
-    </div>
-  </div>
-
-  <section class="contacts">
-    <h3 class="contacts__title">
-      <span>Остались вопросы?</span>
-      <span>Свяжитесь с нами!</span>
-    </h3>
-    <div class="contacts-wrap">
-      <div class="contacts__box">
-        <span class="contacts__text">Звоните:</span>
-        <a class="contacts__link" href="tel: +7 (812)555-66-66">
-          +7 (812)555-66-66
-        </a>
-      </div>
-
-      <div class="contacts__box">
-        <span class="contacts__text">Пишите:</span>
-        <a class="contacts__link" href="mailto:mail@htmlacademy">
-          mail@htmlacademy
-        </a>
-      </div>
-
-      <div class="contacts__box">
-        <span class="contacts__text">Приежайте в гости:</span>
-        <a class="contacts__link" href="#">
-          ул.Большая<br> Конюшенная, 19/8
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <div id="map"></div>
-
-  <footer class="footer">
-    <div class="footer__logoacad">
-      <a class="footer__logoacad-link" href="#">
+  <footer class="footer-form">
+    <div class="footer-form__logo">
+      <a class="footer-form__logo-link" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
         <g class="logo-tablet" fill="#283645">
           <path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.063c0 4.86-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.287-1.289 1.287-.676 0-1.256-.58-1.256-1.287l.002-20.119zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.002zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.225.58 1.225 1.256v20.349c0 .677-.48 1.19-1.158 1.19h-.129c-.548 0-.936-.321-1.318-.772l-13.976-17.867v17.449c0 .677-.547 1.257-1.257 1.257-.676 0-1.223-.58-1.223-1.257V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.936 0 .676-.577 1.288-1.285 1.288-.482 0-.807-.259-1.03-.58l-8.401-10.464-4.863 4.861v4.895a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.006z"/>
@@ -433,29 +370,32 @@
       </a>
     </div>
 
-    <div class="footer__social">
-      <a class="footer__social-icon" href="#">
-        twitter<span class="footer__social-tw">
+    <div class="footer-form__social">
+      <a class="footer-form__social-item" href="#">
+        twitter <span class="footer-form__social-tw"></span>
       </a>
-      <a class="footer__social-icon" href="#">
-        facebook<span class="footer__social-fb"></span>
+      <a class="footer-form__social-item" href="#">
+        facebook <span class="footer-form__social-facebook"></span>
       </a>
-      <a class="footer__social-icon" href="#">
-        youtube<span class="footer__social-youtube">
+      <a class="footer-form__social-item" href="#">
+        youtube <span class="footer-form__social-youtub"></span>
       </a>
     </div>
 
-    <div class="footer__logo-acad">
-      <span class="footer__logo-text">Разработано</span>
-      <a class="footer__logo-link" href=""></a>
+    <div class="footer-form__logotip">
+      <span class="footer-form__logotip-text">Разработано</span>
+       <a class="footer-form__logotip-link" href=""></a>
     </div>
+
   </footer>
 
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBErly6hwYeG1_8XbbyW2rvUgESY5IQf2A&callback=initMap">
-  </script>
 
-    @@include('_include/page_bottom.html')
-
+@@include('_include/page_bottom.html')
 </body>
 </html>
+
+
+
+
+
+

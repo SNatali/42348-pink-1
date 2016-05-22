@@ -1,0 +1,53 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/field-text/field-text.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.field-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding-left: 6%;
+  padding-right: 6%;
+
+  @media  (min-width: @screen-sm) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  }
+  @media  (min-width: @screen-md) {}
+
+  &__title{
+    color: @pink;
+    font-size: @font-size;
+    line-height: (@line-height+12);
+    text-transform: uppercase;
+    padding-left: 24px;
+    padding-bottom: 5px;
+
+    @media  (min-width: @screen-sm){
+      padding-left: 24px;
+      padding-right: 20px;
+    }
+    @media  (min-width: @screen-md) {}
+  }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"]{
+      display: inline-block;
+      padding: 24px;
+      font-size: (@font-size+4);
+      line-height: (@line-height+12);
+      color: @dack_blue_grey;
+      outline: none;
+      border-radius: 2px;
+      border: 2px solid #e5e5e5;
+    @media  (min-width: @screen-sm){
+    @media  (min-width: @screen-md) {}
+    }
+    }
+
+}

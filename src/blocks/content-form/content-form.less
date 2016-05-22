@@ -1,0 +1,173 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/content-form/content-form.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.content-form {
+  //padding-left: 6%;
+  //padding-right: 6%;
+  //display: flex;
+  display: flex;
+  flex-direction: column;
+
+  @media  (min-width: @screen-sm) {
+  padding-left: 6%;
+  padding-right: 6%;
+  }
+  @media  (min-width: @screen-md) {
+  padding-left: 11%;
+  padding-right: 11%;
+  }
+
+
+  &__fieldset {
+    display: flex;
+    margin-top: 35px;
+
+    &:nth-of-type(1){
+
+
+      @media  (min-width: @screen-sm) {
+        order:;
+      }
+      @media  (min-width: @screen-md) {}
+    }
+
+    &:nth-of-type(2){
+      background: #f2f2f2;
+
+    @media  (min-width: @screen-sm) {
+      background: #ffffff;
+      order:;
+    }
+    @media  (min-width: @screen-md) {}
+    }
+
+    &:nth-of-type(3){
+
+      @media  (min-width: @screen-sm) {
+          order:;
+      }
+      @media  (min-width: @screen-md) {}
+    }
+
+    &:nth-of-type(4){
+    background: #f2f2f2;
+
+    @media  (min-width: @screen-sm) {
+     background: #ffffff;
+       order:;
+    }
+    @media  (min-width: @screen-md) {}
+    }
+
+    &:nth-of-type(5){
+
+      @media  (min-width: @screen-sm) {
+          order:;
+      }
+      @media  (min-width: @screen-md) {}
+    }
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+
+  &__fieldset-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 7px;
+    padding-top: 35px;
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {}
+  }
+
+
+  &__title-box {
+    display: block;
+    font-size: @font-size;
+    line-height: (@line-height+12);
+    color: @dack_blue_grey;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    >span {
+      display: none;
+
+      @media  (min-width: @screen-sm) {
+      display: block;
+      padding-bottom: 70px;
+      }
+      @media  (min-width: @screen-md) {
+
+      }
+    }
+
+  @media  (min-width: @screen-sm) {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: (@font-size+4);
+    line-height: (@line-height+12);
+  }
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color:  @pink;
+    font-size: @font-size;
+    line-height: @line-height;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+    //padding-top: 35px;
+    padding-bottom: 35px;
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {}
+  }
+
+  &__btn{
+    display: block;
+    color: @white;
+    background: @green;
+    text-align: center;
+    padding: 20px;
+    font-size: (@font-size+4);
+    line-height: (@line-height+12);
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    border: 2px solid @green;
+    text-transform: uppercase;
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {}
+  }
+
+  &__subscribe-text {
+    color: @dack_blue_grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: @font-size;
+    line-height: (@line-height+12);
+    margin: 0;
+
+
+    >span{
+      color: @pink;
+    }
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {}
+  }
+}
+
+

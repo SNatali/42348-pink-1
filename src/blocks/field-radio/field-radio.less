@@ -1,0 +1,60 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/field-radio/field-radio.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.field-radio {
+  margin-bottom: 35px;
+  //font-size: (@font-size+4);
+  //line-height: (@line-height+17);
+
+  @media  (min-width: @screen-sm){}
+  @media  (min-width: @screen-md){}
+
+  &__input {
+    position: relative;
+    cursor: pointer;
+    margin-left: 70px;
+    font-size: (@font-size+4);
+    line-height: (@line-height+17);
+
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -70px;
+      border-radius: 50%;
+    }
+
+    &::before{
+      width: 35px;
+      width: 35px;
+      height: 35px;
+      background: @white;
+      border: 2px solid #e5e5e5;
+    }
+
+    &::after{
+    width: 35px;
+    height: 35px;
+    background: @pink;
+    transform: scale(0);
+    transition-property:transform;
+    transition-duration: 0.28s;
+    }
+
+  @media  (min-width: @screen-sm){}
+  @media  (min-width: @screen-md){}
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+}
+
+.field-radio input[type="radio"]:checked ~ .field-radio__input::after {
+  transform: scale(.4);
+}
+
