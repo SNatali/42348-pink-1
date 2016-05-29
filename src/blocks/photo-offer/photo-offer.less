@@ -1,0 +1,54 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/photo-offer/photo-offer.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.photo-offer {
+  display: block;
+  padding-bottom: 54px;
+  padding-top: 54px;
+  padding-left: 6%;
+  padding-right: 6%;
+
+@media  (min-width: @screen-sm) {
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: (@font-size+4);
+  line-height: (@line-height+12);
+  padding-bottom: 80px;
+  padding-top: 92px;
+}
+@media  (min-width: @screen-md) {
+  padding-bottom: 80px;
+  padding-top: 92px;
+}
+
+
+  &__title {
+    font-size: @font-size;
+    line-height: (@line-height+12);
+    color: @dack_blue_grey;
+    text-align: center;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+
+  @media  (min-width: @screen-sm) {
+    font-size: (@font-size+4);
+    line-height: (@line-height+12);
+    padding-left: 87px;
+    padding-right: 87px;
+  }
+  @media  (min-width: @screen-md) {}
+  }
+
+  &__text {
+      display: block;
+    @media  (min-width: @screen-sm) {
+      display: inline;
+    }
+    @media  (min-width: @screen-md) {
+      display: block;
+    }
+  }
+}

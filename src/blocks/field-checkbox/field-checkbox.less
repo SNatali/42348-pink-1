@@ -5,6 +5,13 @@
 
 .field-checkbox {
   display: flex;
+
+  &:last-of-type{
+
+    @media  (min-width: @screen-sm){
+      padding-bottom: 8px;
+    }
+  }
 @media  (min-width: @screen-sm){}
 @media  (min-width: @screen-md){}
 
@@ -15,7 +22,9 @@ font-size: (@font-size+4);
 line-height: (@line-height+17);
 
 
-@media  (min-width: @screen-sm){}
+@media  (min-width: @screen-sm){
+  margin-bottom: 43px;
+}
 @media  (min-width: @screen-md){}
 }
 
@@ -45,11 +54,11 @@ input[type="checkbox"] {
 .field-checkbox input[type="checkbox"]:checked + span:before{
   content: "";
   position: absolute;
-  width: 15px;
-  height: 7px;
-  left: 9px;
-  top: 10px;
-  border: 3px solid @pink;
+  width: 19px;
+  height: 9px;
+  left: 7px;
+  top: 8px;
+  border: 2px solid @pink;
   border-top: none;
   border-right: none;
   -webkit-transform: rotate(-45deg);

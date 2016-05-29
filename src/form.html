@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <!-- <link rel="stylesheet" href="css/normalize.css">-->
      <link rel="stylesheet" href="css/style.min.css">
      <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     @@include('_include/page_head.html')
   </head>
   <body>
@@ -129,53 +130,24 @@
         </li>
       </ul>
     </nav>
-    <h1 class="form-title">
-      Конкурс на самое безбашеное путешествие с Пинк
-    </h1>
-  </div>
+    </div>
+    <div class="form-title">
+      <h1 class="form-title__text">
+        Конкурс на самое безбашеное путешествие&nbspс&nbspПинк
+      </h1>
+    </div>
   </header>
-    <!--<header class="form-header">
-      <div class="form-header__inner header-wrap">
-          <div class="logo">
-          <a class="logo__link" href="index.html">
-           Pink
-          </a>
-        </div>
-        <nav class="nav-wrap">
-          <ul class="nav-main">
-            <li class="nav-main__item">
-              <a class="nav-main__link">Главная</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link">Фотографии</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link">Конкурс</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link">HTMLACADEMY</a>
-            </li>
-          </ul>
-        </nav>
-
-      </div>
-
-      <h1 class="form-title">
-      Конкурс на самое безбашеное путешествие с Пинк
-    </h1>
-
-
-    </header>-->
      <main class="main-form">
+      <div class="content-form__title-box">Поделитесь своей историей и  получите шанс выиграть ценный приз&nbsp—&nbsp1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже!</span>
+        </div>
 
     <form class="content-form" action="/echo" method="post" enctype="multipart/form-data">
       <fieldset class="content-form__fieldset">
-        <legend class="content-form__title-box">Поделитесь своей историей и  получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже!</span>
-        </legend>
 
+        <div class="content-form__fieldset-wrap">
          <div class="field-text">
           <label class="field-text__title" for="yourname">Имя:</label>
-          <input type="text" id="yourname" name="first-name" required placeholder="Введите ваше имя">
+            <input type="text" id="yourname" name="first-name" required placeholder="Введите ваше имя">
         </div>
 
         <div class="field-text">
@@ -187,80 +159,125 @@
           <label class="field-text__title" for="father-name">Отчество:</label>
           <input type="text" id="father-name" name="third-name" placeholder="Ну и отчество тоже">
         </div>
+        </div>
+
+
+        <div class="desktop-radio">
+        <div class="content-form__fieldset-wrap ">
+        <div class="content-form__title">
+          С какими приложением путешествовали?
+        </div>
+
+          <div class="field-radio">
+
+            <input type="radio" name="pink" value="ios" id="forios" checked required>
+            <label class="field-radio__input" for="forios">Pink для iOS
+            </label>
+          </div>
+
+         <div class="field-radio">
+            <input type="radio" name="pink" value="android" id="forandroid" required>
+            <label class="field-radio__input" for="forandroid">Pink на Android
+            </label>
+          </div>
+
+          <div class="field-radio">
+            <input type="radio" name="pink" value="windows" id="forphone" required>
+            <label class="field-radio__input" for="forphone"> Windows Phone
+          </label>
+          </div>
+          </div>
+          </div>
+
+
+
+
       </fieldset>
 
       <fieldset class="content-form__fieldset">
         <div class="content-form__fieldset-wrap">
-          <legend class="content-form__title">
+          <div class="content-form__title">
           Ваши безбашенные достижения в путешествии
-          </legend>
-          <div class="field-checkbox">
-            <label class="field-checkbox__input" for="photo">
-             <input type="checkbox" name="self" id="photo" value="progress" checked>
-             <span></span>
-             Сделал селфи с акулой
-            </label>
+          </div>
+
+          <div class="desktop-checkbox">
+            <div class="field-checkbox">
+              <label class="field-checkbox__input" for="photo">
+               <input type="checkbox" name="self" id="photo" value="progress" checked>
+               <span></span>
+               Сделал селфи с акулой
+              </label>
+              </div>
+
+              <div class="field-checkbox">
+              <label class="field-checkbox__input" for="beach">
+                <input type="checkbox" name="sunburn" id="beach" value="progress" checked>
+                <span></span>
+                Обгорел на пляже
+                </label>
+              </div>
             </div>
 
-            <div class="field-checkbox">
-            <label class="field-checkbox__input" for="beach">
-              <input type="checkbox" name="sunburn" id="beach" value="progress" checked>
-              <span></span>
-              Обгорел на пляже
+            <div class="desktop-checkbox">
+              <div class="field-checkbox">
+              <label class="field-checkbox__input" for="saw">
+                <input type="checkbox" name="saw-сhack-noris" id="saw" value="progress">
+                <span></span>
+                Видел чака норриса
               </label>
+              </div>
+              <div class="field-checkbox">
+              <label class="field-checkbox__input" for="buy">
+                <input type="checkbox" name="buy-souvenirs" id="buy" value="progress">
+                <span></span>
+                Накупил сувениров
+                </label>
+              </div>
             </div>
-            <div class="field-checkbox">
-            <label class="field-checkbox__input" for="saw">
-              <input type="checkbox" name="saw-сhack-noris" id="saw" value="progress">
-              <span></span>
-              Видел чака норриса
-            </label>
-            </div>
-            <div class="field-checkbox">
-            <label class="field-checkbox__input" for="buy">
-              <input type="checkbox" name="buy-souvenirs" id="buy" value="progress">
-              <span></span>
-              Накупил сувениров
+
+            <div class="desktop-checkbox">
+              <div class="field-checkbox">
+                <label class="field-checkbox__input" for="keep">
+                <input type="checkbox" name="keep-tower" id="keep" value="progress" checked>
+                <span></span>
+                Ужержал башню
+                </label>
+              </div>
+              <div class="field-checkbox">
+              <label class="field-checkbox__input" for="hotel">
+                <input type="checkbox" name="break-down-hotel" id="hotel" value="progress">
+                <span></span>
+                Разгромил отель
               </label>
-            </div>
-            <div class="field-checkbox">
-              <label class="field-checkbox__input" for="keep">
-              <input type="checkbox" name="keep-tower" id="keep" value="progress" checked>
-              <span></span>
-              Ужержал башню
-              </label>
-            </div>
-            <div class="field-checkbox">
-            <label class="field-checkbox__input" for="hotel">
-              <input type="checkbox" name="break-down-hotel" id="hotel" value="progress">
-              <span></span>
-              Разгромил отель
-            </label>
+              </div>
             </div>
             </div>
         </fieldset>
 
         <fieldset class="content-form__fieldset">
+        <div class="content-form__fieldset-wrap">
+          <div class="content-form__title tablet-title">Контактная информация</div>
           <div class="field-text">
           <label class="field-text__title" for="yourname">
             Номер телефончика
           </label>
-          <input type="tel" id="yourname" name="first-name" required placeholder="Номер, пожалуйста">
+          <input class="field-text__tel" type="tel" id="yourname" name="first-name" required placeholder="Номер, пожалуйста">
         </div>
 
         <div class="field-text">
           <label class="field-text__title" for="surname">
             Адресок почты
           </label>
-          <input type="email" id="surname" name="second-name" required placeholder="E&ndash;mail, пожалуйста">
+          <input class="field-text__email" type="email" id="surname" name="second-name" required placeholder="E&ndash;mail, пожалуйста">
+        </div>
         </div>
         </fieldset>
 
         <fieldset class="content-form__fieldset">
           <div class="content-form__fieldset-wrap">
-        <legend class="content-form__title">
+        <div class="content-form__title">
           С какими приложением путешествовали?
-        </legend>
+        </div>
 
           <div class="field-radio">
 
@@ -284,20 +301,25 @@
         </fieldset>
 
         <fieldset class="content-form__fieldset">
-          <legend class="content-form__title">Опишите свои эмоции</legend>
+          <div class="content-form__fieldset-wrap">
+          <div class="content-form__title">Опишите свои эмоции</div>
             <div class="field-textarea">
-              <textarea class="field-textarea__input">Можно прям в красках, не стесняясь в выражениях
+              <textarea class="field-textarea__input" placeholder="Можно прям в красках, не стесняясь в выражениях">
               </textarea>
             </div>
+          </div>
           </fieldset>
-            <div class="content-form__fieldset-wrap">
+
+
+              <div class="content-form__inner">
               <a href="#" class="content-form__btn">
               Отправить форму
               </a>
               <p class="content-form__subscribe-text">
-                <span>*</span> &mdash; обязательные поля
+                <span>*</span> &mdash; обязательные&nbsp;<span class="available-text"> для заполнения</span>&nbsp;поля
               </p>
-            </div>
+              </div>
+
       </form>
 
     </div>

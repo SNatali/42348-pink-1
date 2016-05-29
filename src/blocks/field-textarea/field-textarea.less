@@ -6,7 +6,10 @@
 .field-textarea {
   padding-left: 6%;
   padding-right: 6%;
-@media  (min-width: @screen-sm){}
+@media  (min-width: @screen-sm){
+  padding-left: 0;
+  padding-right: 0;
+}
 @media  (min-width: @screen-md){}
 
   &__input{
@@ -21,8 +24,11 @@
     border-radius: 2px;
     color: @dack_blue_grey;
 
+
     @media  (min-width: @screen-sm){}
-    @media  (min-width: @screen-md){}
+    @media  (min-width: @screen-md){
+      height: 126px;
+    }
 
   }
 }

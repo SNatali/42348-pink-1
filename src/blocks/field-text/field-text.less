@@ -7,8 +7,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
-  padding-left: 6%;
-  padding-right: 6%;
+
+    &:last-of-type{
+       @media  (min-width: @screen-sm){
+        margin-bottom: 0;
+       }
+    }
 
   @media  (min-width: @screen-sm) {
   display: flex;
@@ -17,7 +21,7 @@
   margin-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
-  }
+}
   @media  (min-width: @screen-md) {}
 
   &__title{
@@ -29,11 +33,36 @@
     padding-bottom: 5px;
 
     @media  (min-width: @screen-sm){
-      padding-left: 24px;
+      padding-left: 0;
       padding-right: 20px;
     }
     @media  (min-width: @screen-md) {}
   }
+
+  &__tel{
+
+    @media  (min-width: @screen-sm){
+      background: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    @media  (min-width: @screen-md) {}
+  }
+
+   &__email{
+
+    @media  (min-width: @screen-sm){
+      background: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 20px;
+    }
+    @media  (min-width: @screen-md) {}
+  }
+
+
+
+
     input[type="text"],
     input[type="tel"],
     input[type="email"]{
@@ -45,6 +74,12 @@
       outline: none;
       border-radius: 2px;
       border: 2px solid #e5e5e5;
+
+      &:hover::placeholder,
+      &:focus::placeholder{
+        color: transparent;
+        transition-duration: 0.5s;
+      }
     @media  (min-width: @screen-sm){
     @media  (min-width: @screen-md) {}
     }

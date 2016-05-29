@@ -14,7 +14,7 @@
 
 .prices-wrap {
   padding-top: 68px;
-  padding-bottom: 100px;
+  padding-bottom: 61px;
   width: 100%;
   overflow: hidden;
   text-align: center;
@@ -45,6 +45,7 @@
   transform: translateX(-31%);
   transition: transform 0.3s;
   text-align: left;
+  margin-bottom: 39px;
 
   #tariff_01:checked ~ & {
     transform: translateX(0%);
@@ -332,47 +333,63 @@
 }
 
 
-.pagination-item{
+.pagination-item {
   position: relative;
   cursor: pointer;
     //max-width: 100px;
   display: inline-block;
   word-wrap: break-word;
   margin-right: 20px;
+  background: #b5b9be;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 
-  &::before,
-  &::after{
-    position: absolute;
-    display: block;
-    content: '';
-    border-radius: 50%;
-    top: 4px;
-    left: 12px;
+  @media  (min-width: @screen-sm){
+    display: none;
   }
-  &::before{
+  @media  (min-width: @screen-md) {}
+}
+
+
+
+
+#tariff_01:checked ~ label[for="tariff_01"] {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 12px;
     height: 12px;
-    border: solid 2px #5a5a5a;
-
+    border: 3px solid @dack_blue_grey;
+    border-radius: 50%;
   }
-  &::after{
-    width: 16px;
-    height: 16px;
-    background-color: #00bad2;
-    transform: scale(0);
-    transition-property:transform;
-    transition-duration: 0.28s;
+}
+#tariff_02:checked ~ label[for="tariff_02"] {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 3px solid @dack_blue_grey;
+    border-radius: 50%;
   }
-
-   @media  (min-width: @screen-sm){
-    display: none;
-   }
+}
+#tariff_03:checked ~ label[for="tariff_03"] {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 3px solid @dack_blue_grey;
+    border-radius: 50%;
   }
-
-  //input[type="radio"]:checked ~ label::after {
-    //transform: scale(.9);
-//}
-
+}
 
 
 

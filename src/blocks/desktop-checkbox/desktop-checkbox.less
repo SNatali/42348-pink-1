@@ -1,0 +1,15 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/desktop-checkbox/desktop-checkbox.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.desktop-checkbox {
+  display: flex;
+  flex-direction: column;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+  //display: flex;
+   //justify-content: space-between;
+  }
+}

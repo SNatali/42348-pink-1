@@ -4,12 +4,20 @@
 
 
 .field-radio {
-  margin-bottom: 35px;
-  //font-size: (@font-size+4);
-  //line-height: (@line-height+17);
+  padding-bottom: 35px;
 
-  @media  (min-width: @screen-sm){}
+    &:last-of-type{
+
+  @media  (min-width: @screen-sm){
+    padding-bottom: 47px;
+  }
+  }
+
+  @media  (min-width: @screen-sm){
+  padding-bottom: 43px;
+  }
   @media  (min-width: @screen-md){}
+
 
   &__input {
     position: relative;
@@ -42,7 +50,7 @@
     transform: scale(0);
     transition-property:transform;
     transition-duration: 0.28s;
-    }
+   }
 
   @media  (min-width: @screen-sm){}
   @media  (min-width: @screen-md){}
