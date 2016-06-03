@@ -1,0 +1,52 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/range-controls/range-controls.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+  //display: flex;
+  //margin-right: 20px;
+  //margin-left: 20px;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+
+
+  &__scale {
+   // display: flex;
+   // justify-content: center;
+    height: 2px;
+    width: 76%;
+    background: #000;
+    margin: 0 auto;
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__bar {
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__toogle {
+
+    position: absolute;
+    top: -6px;
+    left: 68%;
+    background: #f2f2f2;
+    border: 2px solid @pink;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+}

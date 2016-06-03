@@ -1,0 +1,24 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/container-photo/container-photo.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.container-photo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  padding: 20px;
+  //margin-left: 20px;
+  background: #f2f2f2;
+  //padding: 20px;
+
+  &:first-of-type {
+    //margin-left: 20px;
+    //margin-right: 20px;
+  }
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+}

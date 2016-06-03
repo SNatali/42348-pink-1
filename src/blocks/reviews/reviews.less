@@ -10,12 +10,15 @@
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
+  position: relative;
 
   @media  (min-width: @screen-sm) {
     padding-bottom: 72px;
   }
   @media  (min-width: @screen-md) {
     padding-top: 75px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
 
@@ -37,11 +40,16 @@
     width: 79px;
     height: 64px;
     margin: 0 auto;
+
+
   }
   }
 
   @media  (min-width: @screen-sm) {}
-  @media  (min-width: @screen-md) {}
+  @media  (min-width: @screen-md) {
+    width: 700px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -65,7 +73,7 @@
     line-height: (@line-height+12);
   }
   @media  (min-width: @screen-md) {
-    width: 700px;
+    //width: 700px;
   }
 }
 

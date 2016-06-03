@@ -1,0 +1,155 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/editor-photo/editor-photo.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.editor-photo {
+  padding-top: 20px;
+  //padding-right: 20px;
+  //padding-left: 20px;
+  padding-bottom: 38px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+
+
+@media  (min-width: @screen-sm) {
+  padding-top: 60px;
+  //padding-right: 40px;
+  //padding-left: 40px;
+  padding-bottom: 60px;
+  flex-direction: row;
+
+}
+@media  (min-width: @screen-md) {}
+
+
+  &__inner {
+    display: flex;
+    //flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+
+  @media  (min-width: @screen-sm) {
+    flex-direction: row;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  @media  (min-width: @screen-md) {}
+  }
+
+  &__content{
+
+    @media  (min-width: @screen-sm) {
+      padding-left: 20px;
+    }
+    @media  (min-width: @screen-md) {}
+  }
+
+
+  &__images {
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__tools {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  @media  (min-width: @screen-sm) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__crop {
+    display: inline-block;
+    background: url("../img/icon-editor-crop__active.svg") no-repeat;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+
+
+  &__fill {
+    display: inline-block;
+    background: url("../img/icon-editor-fill.svg") no-repeat;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+
+    &::hover {
+      display: inline-block;
+      background: url("../img/icon-edit-fill__hover.svg") no-repeat;
+      background-position: center center;
+      width: 48px;
+      height: 48px;
+
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+   }
+  }
+
+  &__contrast {
+    display: inline-block;
+    background: url("../img/icon-editor-contrast.svg") no-repeat;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+
+    &::hover {
+      display: inline-block;
+    background: url("../img/icon-editor-contrast__hover.svg") no-repeat;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+  }
+
+  &__tablet {
+    display: none;
+
+  @media  (min-width: @screen-sm) {
+    display: flex;
+  }
+  @media  (min-width: @screen-md) {}
+  }
+
+  &__tablet .range-controls {
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+  }
+}
+
+
+
+
+
