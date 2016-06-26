@@ -61,7 +61,10 @@
   }
 
 
-
+  input{
+    outline: none !important;
+    border: none;
+  }
 
     input[type="text"],
     input[type="tel"],
@@ -71,17 +74,31 @@
       font-size: (@font-size+4);
       line-height: (@line-height+12);
       color: @dack_blue_grey;
-      outline: none;
+
       border-radius: 2px;
-      border: 2px solid #e5e5e5;
+      border: 0;
+      box-shadow: 0 0 0 2px #e5e5e5;
+
 
       &:hover::placeholder,
       &:focus::placeholder{
         color: transparent;
         transition-duration: 0.5s;
       }
+
+      &:hover {
+        box-shadow: 0 0 0 2px @dack_blue_grey;
+        transition-duration: 0.5s;
+
+      }
+      &:active {
+        box-shadow: 0 0 0 2px @pink;
+        transition-duration: 0.5s;
+      }
     @media  (min-width: @screen-sm){
-    @media  (min-width: @screen-md) {}
+    @media  (min-width: @screen-md) {
+      padding: 26px 24px;
+    }
     }
     }
 

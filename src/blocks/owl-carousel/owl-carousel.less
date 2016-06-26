@@ -242,6 +242,18 @@
     border-right: none;
     -webkit-transform: rotate(-45deg);
     transform: rotate(45deg);
+
+  &:hover {
+    border: 2px solid @dack_blue_grey;
+    border-top: none;
+    border-right: none;
+
+  }
+  &:active {
+    border: 2px solid fade(@dack_blue_grey, 30%);
+    border-top: none;
+    border-right: none;
+  }
 }
 }
 
@@ -259,6 +271,18 @@
     border-right: none;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-135deg);
+
+  &:hover {
+    border: 2px solid @dack_blue_grey;
+    border-top: none;
+    border-right: none;
+
+  }
+  &:active {
+    border: 2px solid fade(@dack_blue_grey, 30%);
+    border-top: none;
+    border-right: none;
+  }
 }
 
 }
@@ -266,6 +290,7 @@
 .owl-dots {
   display: flex;
   justify-content: center;
+  text-align: center;
 
   @media  (min-width: @screen-sm){}
   @media  (min-width: @screen-md){

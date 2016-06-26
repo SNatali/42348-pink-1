@@ -117,6 +117,14 @@
     line-height: (@line-height+14);
     text-align: center;
 
+  &:hover {
+    color: @dack_blue_grey;
+  }
+
+  &:active{
+    color: fade(@dack_blue_grey, 30%);
+  }
+
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }

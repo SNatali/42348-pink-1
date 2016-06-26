@@ -20,13 +20,30 @@
     line-height: (@line-height+12);
     resize: none;
     overflow: auto;
-    border: 2px solid #e5e5e5;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 2px #e5e5e5;
     border-radius: 2px;
     color: @dack_blue_grey;
 
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: transparent;
+    transition-duration: 0.5s;
+  }
+  &:hover {
+    box-shadow: 0 0 0 2px @dack_blue_grey;
+    transition-duration: 0.5s;
 
-    @media  (min-width: @screen-sm){}
-    @media  (min-width: @screen-md){
+  }
+  &:active {
+    box-shadow: 0 0 0 2px @pink;
+   transition-duration: 0.5s;
+  }
+
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {
       height: 126px;
     }
 

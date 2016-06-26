@@ -82,8 +82,8 @@
 
   &__link {
     display: block;
-    padding: 12px 21px;
-    padding-bottom: 13px;
+    margin: 18px 21px;
+    //padding-bottom: 13px;
     font-size: (@font-size+4);
     line-height: (@line-height+14);
     color: @white;
@@ -91,16 +91,38 @@
     text-decoration: none;
     background-color: transparent;
 
-  &:hover {}
+  &:hover {
+    color: @pink;
+    text-decoration: none;
+  @media  (min-width: @screen-sm) {
+
+  }
+  @media  (min-width: @screen-md) {
+    text-decoration: none;
+    border-bottom: 1px solid @white;
+    color: @white
+  }
+  }
+
+  &:active {
+    color: fade( @pink, 30%);
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {
+    color: #596470;
+    border-bottom: none;
+  }
+  }
 
   @media  (min-width: @screen-sm) {
-    padding: 20px 21px;
+    margin: 20px 21px;
+     //padding-bottom: 0;
   }
   @media  (min-width: @screen-md) {
     text-transform: none;
     line-height: @line-height;
-    padding-left: 42px;
-    padding-right: 42px;
+    margin-left: 42px;
+    margin-right: 42px;
+    padding-bottom: 13px;
   }
   }
 }

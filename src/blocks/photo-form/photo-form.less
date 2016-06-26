@@ -39,6 +39,16 @@
     line-height: 18px;
     text-align: center;
     margin-bottom: 10px;
+    outline: none;
+
+    &:hover {
+      background: @pink;
+      color: @white;
+    }
+    &:active {
+      background: @pink;
+      color: fade(@white, 30%);
+    }
 
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
@@ -56,7 +66,18 @@
     color: #dddfe0;
     line-height: 18px;
     text-align: center;
+    outline: none;
     //padding: 25px 20px;
+
+    &:hover {
+      border: 3px solid #b5b9be;
+      color: #b5b9be;
+    }
+    &:active {
+      background: #b5b9be;
+      color: fade(@white, 30%);
+    }
+
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }

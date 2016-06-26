@@ -196,6 +196,7 @@
         }
       }
 
+
         .content-form__title{
 
           @media  (min-width: @screen-sm) {
@@ -264,7 +265,9 @@
       padding-right: 60px;
       padding-top: 47px;
     }
-    @media  (min-width: @screen-md) {}
+    @media  (min-width: @screen-md) {
+      //padding-top: 0;
+    }
   }
 
 
@@ -370,6 +373,22 @@
     border: 2px solid @green;
     text-transform: uppercase;
 
+    &:hover {
+      color: @white;
+      text-decoration: none;
+      background: @btn_hover;
+    }
+    &:active {
+      color: fade(@white, 30%);
+      background: @btn_hover;
+      text-decoration: none;
+    }
+    &:disabled {
+      color: fade(@white, 30%);
+      text-decoration: none;
+      background: fade(@btn_hover, 70%);
+    }
+
     @media  (min-width: @screen-sm) {
     margin-top: 0;
     margin-bottom: 0;
@@ -416,6 +435,13 @@
   }
   @media  (min-width: @screen-md) {}
   }
+
+  .field-name{
+        @media  (min-width: @screen-sm){}
+        @media  (min-width: @screen-md){
+          padding-top: 30px;
+        }
+      }
 
 
 

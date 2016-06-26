@@ -75,6 +75,13 @@
     font-size: 0;
     position: relative;
 
+    &:hover {
+      border: 3px solid @dack_blue_grey;
+    }
+    &:active {
+      border: fade(@dack_blue_grey, 30%);
+    }
+
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}
   }
@@ -149,6 +156,14 @@
     background-size: 100% 100%;
     width: 35px;
     height: 40px;
+
+    &:hover{
+      display: flex;
+      background: url("../img/htmlacademy__hover.svg");
+      background-size: 100% 100%;
+      width: 35px;
+      height: 40px;
+    }
 
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {}

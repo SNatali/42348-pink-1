@@ -56,6 +56,18 @@
     line-height: 18px;
 
 
+  &:hover {
+    background: @white;
+    color: @pink;
+    text-decoration: none;
+  }
+
+  &:active{
+    background: @white;
+    color: fade(@pink, 30%);
+    text-decoration: none;
+  }
+
   @media  (min-width: @screen-sm) {
     justify-content: center;
     width: 300px;
