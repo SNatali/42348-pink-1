@@ -7,12 +7,14 @@
 <!--<link rel="stylesheet" href="css/normalize.css">-->
 <link rel="stylesheet" href="css/style.min.css">
 <meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 @@include('_include/page_head.html')
 </head>
 
 <body>
 <!--@@include('blocks/page-header/page-header.html')-->
   <header class="page-header">
+
     <div class="page-header__inner  menu-show" id="page-header">
       <a href="#" class="logo" >
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" >
@@ -111,22 +113,22 @@
       <ul class="main-nav__list" id="main-nav__list">
         <li class="main-nav__item main-nav__active">
           <a class="main-nav__link" href="#">
-            Главная
+            <span>Главная</span>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="photo.html">
-            Фотографии
+            <span>Фотографии</span>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">
-            Конкурс
+            <span>Конкур</span>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">
-            HTMLAcademy
+            <span>HTMLAcademy</span>
           </a>
         </li>
       </ul>
@@ -275,16 +277,16 @@
       <table class="prices-table">
         <thead class="prices-table__header">
           <tr class="prices-table__header-row">
-            <td class="prices-table__header-cell"></td>
-            <td class="prices-table__header-cell mobile-tab">
+            <td class="prices-table__header-cell cell__first"></td>
+            <td class="prices-table__header-cell mobile-tab cell__second">
               <span>база</span>
               <span>1,99 USD</span>
             </td>
-            <td class="prices-table__header-cell mobile-cell">
+            <td class="prices-table__header-cell mobile-cell cell__third">
               <span>стандарт</span>
               <span>3,99 USD</span>
             </td>
-            <td class="prices-table__header-cell mobile-tab">
+            <td class="prices-table__header-cell mobile-tab cell__fourth">
               <span>анлим</span>
               <span>9,99 USD</span>
             </td>
@@ -292,52 +294,57 @@
         </thead>
         <tbody class="prices-table__body">
           <tr class="prices-table__body-row">
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell cell__first">
               Розовый фильтр
             </td>
-            <td class="prices-table__body-cell ">
+            <td class="prices-table__body-cell  cell__second">
               <span>Розовый фильтр</span>
               <span class="icon-up">yes</span>
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell cell__third">
               <span>Розовый фильтр</span>
               <span class="icon-up">yes</span>
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell
+              cell__fourth">
               <span>Розовый фильтр</span>
               <span class="icon-up">yes</span>
             </td>
           </tr>
           <tr class="prices-table__body-row">
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell cell__first">
               Смайлики
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell cell__second">
               <span>Смайлики</span>
               <span class="icon-down">no</span>
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell
+            cell__third">
               <span>Смайлики</span>
               <span class="icon-up">yes</span>
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell cell__fourth">
               <span>Смайлики</span>
               <span class="icon-up">yes</span>
             </td>
           </tr>
           <tr class="prices-table__body-row">
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell cell__first">
               Комментарии
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell
+            cell__second">
               <span>Комментарии</span>
               <span class="icon-down">no</span>
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell
+            cell__third">
               <span>Комментарии</span>
               <span class="icon-down">no</span>
             </td>
-            <td class="prices-table__body-cell">
+            <td class="prices-table__body-cell
+            cell__fourth">
               <span>Комментарии</span>
               <span class="icon-up">yes</span>
             </td>

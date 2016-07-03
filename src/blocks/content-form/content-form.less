@@ -98,7 +98,10 @@
           top: -10px;
           left: 22%;
         }
-        @media  (min-width: @screen-md) {}
+        @media  (min-width: @screen-md) {
+          transform: translateX(-50%);
+          left: 50%;
+        }
       }
 
       .content-form__fieldset-wrap {
@@ -206,7 +209,8 @@
             left: 27%;
           }
           @media  (min-width: @screen-md) {
-            left: 5%;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
     }
@@ -353,7 +357,10 @@
     margin: 0;
     padding-bottom: 35px;
 
-    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-sm) {
+      //left: 50%;
+      //transform: translateX(-50%);
+    }
     @media  (min-width: @screen-md) {}
   }
 

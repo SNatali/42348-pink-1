@@ -9,7 +9,6 @@
     @@include('_include/page_head.html')
   </head>
   <body>
-
 <header class="form-header">
   <div class="form-header__inner  menu-show" id="page-header">
     <a href="#" class="logo" >
@@ -109,22 +108,22 @@
       <ul class="main-nav__list" id="main-nav__list">
         <li class="main-nav__item main-nav__active">
           <a class="main-nav__link" href="index.html">
-            Главная
+            <span>Главная</span>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">
-            Фотографии
+            <span>Фотографии</span>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">
-            Конкурс
+            <span>Конкурс</span>
           </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">
-            HTMLAcademy
+            <span>HTMLAcademy</span>
           </a>
         </li>
       </ul>
@@ -154,12 +153,14 @@
       </picture>
     </div>
     <div class="container-photo first-review">
-      <span class="reviews-photo__name">Анна<span>
+      <span class="container-photo__info-wrap">
+      <span class="container-photo__name">Анна</span>
         <time datatime="">(5 минут назад )</time>
-          <span class="reviews-photo__text">
+          <span class="container-photo__text">
             Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
           </span>
-          <span class="reviews-photo__like">Нравится: 215</span>
+        </span>
+          <span class="container-photo__like">Нравится: 215</span>
     </div>
   </article>
 
@@ -173,12 +174,14 @@
       </picture>
     </div>
     <div class="container-photo ">
-      <span class="reviews-photo__name">Левон<span>
-        <time datatime="">(5 часов назад)</time>
-          <span class="reviews-photo__text">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </span>
-          <span class="reviews-photo__like">Нравится: 356</span>
+      <span class="container-photo__info-wrap">
+        <span class="container-photo__name">Левон</span>
+          <time datatime="">(5 часов назад)</time>
+        <span class="container-photo__text">
+          Вчера он на луну летал, сегодня в руки к нам попал.
+        </span>
+      </span>
+      <span class="container-photo__like">Нравится: 356</span>
     </div>
   </article>
   <article class="reviews-photo">
@@ -190,12 +193,14 @@
       </picture>
     </div>
     <div class="container-photo">
-      <span class="reviews-photo__name">Антон<span>
-        <time datatime="">(12 часов назад)</time>
-          <span class="reviews-photo__text">
-            Соседи будут рады!
-          </span>
-          <span class="reviews-photo__like">Нравится: 666</span>
+      <span class="container-photo__info-wrap">
+        <span class="container-photo__name">Антон</span>
+          <time datatime="">(12 часов назад)</time>
+        <span class="container-photo__text">
+          Соседи будут рады!
+        </span>
+      </span>
+      <span class="container-photo__like">Нравится: 666</span>
     </div>
   </article>
   <article class="reviews-photo">
@@ -207,12 +212,14 @@
       </picture>
     </div>
     <div class="container-photo">
-      <span class="reviews-photo__name">Борис<span>
-        <time datatime="">(20 часов назад)</time>
-          <span class="reviews-photo__text">
-            Здесь могла быть ваша цитата о высоком и вечном.
-          </span>
-          <span class="reviews-photo__like">Нравится: 215</span>
+      <span class="container-photo__info-wrap">
+        <span class="container-photo__name">Борис</span>
+          <time datatime="">(20 часов назад)</time>
+        <span class="container-photo__text">
+          Здесь могла быть ваша цитата о высоком и вечном.
+        </span>
+      </span>
+          <span class="container-photo__like">Нравится: 215</span>
     </div>
   </article>
   <article class="reviews-photo">
@@ -224,12 +231,14 @@
       </picture>
     </div>
     <div class="container-photo">
-      <span class="reviews-photo__name">Сергей<span>
-        <time datatime="">(25 часов назад)</time>
-          <span class="reviews-photo__text">
-           Самая кубанская в мире!
-          </span>
-          <span class="reviews-photo__like">Нравится: 4</span>
+      <span class="container-photo__info-wrap">
+        <span class="container-photo__name">Сергей</span>
+          <time datatime="">(25 часов назад)</time>
+        <span class="container-photo__text">
+          Самая кубанская в мире!
+        </span>
+      </span>
+          <span class="container-photo__like">Нравится: 4</span>
     </div>
   </article>
   <article class="reviews-photo">
@@ -241,12 +250,14 @@
       </picture>
     </div>
     <div class="container-photo">
-      <span class="reviews-photo__name">Максим<span>
-        <time datatime="">(40 часов назад)</time>
-          <span class="reviews-photo__text">
-            Где-то снег?
-          </span>
-          <span class="reviews-photo__like">Нравится: 150</span>
+      <span class="container-photo__info-wrap">
+        <span class="container-photo__name">Максим</span>
+          <time datatime="">(40 часов назад)</time>
+        <span class="container-photo__text">
+          Где-то снег?
+        </span>
+      </span>
+      <span class="container-photo__like">Нравится: 150</span>
     </div>
   </article>
   <article class="reviews-photo">
@@ -258,14 +269,17 @@
       </picture>
     </div>
     <div class="container-photo">
-      <span class="reviews-photo__name">Надежда</span>
-        <time datatime="">(45 часов назад)</time>
-          <span class="reviews-photo__text">
-            Всем GM и взаимные лайки!
-          </span>
-          <span class="reviews-photo__like">Нравится: 2560</span>
+      <span class="container-photo__info-wrap">
+        <span class="container-photo__name">Надежда</span>
+          <time datatime="">(45 часов назад)</time>
+        <span class="container-photo__text">
+          Всем GM и взаимные лайки!
+        </span>
+        </span>
+        <span class="container-photo__like">Нравится: 2560</span>
     </div>
   </article>
+
   <div class="show-photoes">
     <span class="show-photoes__text">Затмите их всех!</span>
     <span class="show-photoes__text">Выкладывайте все, что накопилось в телефоне!</span>
@@ -283,40 +297,38 @@
       </div>
     </div>
     <div class="editor-photo__content">
+       <form class="photo-form" action="/echo" method="post" enctype="multipart/form-data">
       <div class="editor-photo__tools">
+
         <div class="editor-photo__item editor-photo__item--active">
           <span class="editor-photo__crop"></span>
-            <div class="range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar">
-              </div>
+            <div class="editor-photo__input-wrap">
+              <input type="range" class='editor-photo__input' min='1' max='100' step='1' value='90'>
             </div>
-            <div class="range-controls__toogle"></div>
-          </div>
-        </div>
-        <div class="editor-photo__item">
-          <span class="editor-photo__fill"></span>
-            <div class="range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar"></div>
-              </div>
-              <div class="range-controls__toogle"></div>
-            </div>
-        </div>
 
-        <div class="editor-photo__item">
-          <span class="editor-photo__contrast"></span>
-            <div class="range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar"></div>
-              </div>
-              <div class="range-controls__toogle"></div>
-            </div>
-          </div>
         </div>
         <div class="line"></div>
 
-         <form class="photo-form" action="/echo" method="post" enctype="multipart/form-data">
+        <div class="editor-photo__item">
+          <span class="editor-photo__fill"></span>
+            <div class="editor-photo__input-wrap">
+              <input type="range" class='editor-photo__input' min='1' max='100' step='1' value='10'>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="editor-photo__item">
+          <span class="editor-photo__contrast"></span>
+            <div class="editor-photo__input-wrap">
+              <input type="range" class='editor-photo__input' min='1' max='100' step='1' value='50'>
+            </div>
+          </div>
+           <div class="line"></div>
+        </div>
+          <div class="line__mobile"></div>
+
+
+         <!--<form class="photo-form" action="/echo" method="post" enctype="multipart/form-data">-->
           <div class="photo-form__btn">
             <button class="photo-form__btn--default">Запостить</button>
             <button class="photo-form__btn--disabled" >Отмена</button>

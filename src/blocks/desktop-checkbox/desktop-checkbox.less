@@ -4,12 +4,18 @@
 
 
 .desktop-checkbox {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media  (min-width: @screen-sm) {}
-  @media  (min-width: @screen-md) {
-  //display: flex;
-   //justify-content: space-between;
-  }
+	@media  (min-width: @screen-sm) {}
+	@media  (min-width: @screen-md) {
+		width: 33.3%;
+		padding-right: 0;
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	//display: flex;
+	 //justify-content: space-between;
+	}
 }

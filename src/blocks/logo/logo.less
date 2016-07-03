@@ -9,52 +9,52 @@
   padding: 20px 20px;
   width: 200px;
 
-@media (min-width: @screen-sm) {
-  padding-top: 23px;
-  padding-bottom: 37px;
-  padding-left: 40px;
-}
-@media (min-width: @screen-md) {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-}
+  @media (min-width: @screen-sm) {
+    padding-top: 23px;
+    padding-bottom: 37px;
+    padding-left: 40px;
+  }
+  @media (min-width: @screen-md) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
 }
 
 
 .logo-mobile {
   display: block;
 
-@media (min-width: @screen-sm) {
-  display: none;
-}
-@media (min-width: @screen-md) {
-  display: none;
-}
+  @media (min-width: @screen-sm) {
+    display: none;
+  }
+  @media (min-width: @screen-md) {
+    display: none;
+  }
 }
 
 
 .logo-tablet {
   display: none;
 
-@media (min-width: @screen-sm) {
-  display: block;
-}
-@media (min-width: @screen-md) {
-  display: none;
-}
+  @media (min-width: @screen-sm) {
+    display: block;
+  }
+  @media (min-width: @screen-md) {
+    display: none;
+  }
 }
 
 
 .logo-desktop {
   display: none;
 
-@media (min-width: @screen-sm) {
-  display: none;
-}
-@media (min-width: @screen-md) {
-  display: block;
-}
+  @media (min-width: @screen-sm) {
+    display: none;
+  }
+  @media (min-width: @screen-md) {
+    display: block;
+  }
 }
 
 
@@ -62,6 +62,14 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.logo:hover path {
+  fill:#D22856;
+}
+
+.logo:active path {
+  fill: fade(#D22856, 30%);
 }
 
 

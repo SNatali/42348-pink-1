@@ -15,9 +15,91 @@
 @media  (min-width: @screen-sm){}
 @media  (min-width: @screen-md){}
 
-&__input {
+  &__input {
+    position: relative;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-bottom: 37px;
+    font-size: (@font-size+4);
+    line-height: (@line-height+17);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -70px;
+      width: 35px;
+      width: 35px;
+      height: 35px;
+      background: @white;
+      border: 2px solid #e5e5e5;
+
+    &:hover::before {
+      border: 2px solid @dack_blue_grey;
+      transition-duration: 0.5ms;
+     }
+
+     &:active::before {
+      border: 2px solid @pink;
+      transition-duration: 0.5s;
+    }
+
+      @media  (min-width: @screen-sm) {}
+      @media  (min-width: @screen-md) {
+        left: -60px;
+      }
+    }
+
+    @media  (min-width: @screen-sm) {
+      margin-bottom: 43px;
+    }
+    @media  (min-width: @screen-md) {}
+    /*&::after {
+      width: 19px;
+      height: 9px;
+      //left: 7px;
+      top: 8px;
+      border: 2px solid @pink;
+      border-top: none;
+      border-right: none;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }*/
+
+
+    input[type="checkbox"] {
+      display: none;
+
+      @media  (min-width: @screen-sm) {}
+      @media  (min-width: @screen-md) {}
+  }
+}
+}
+
+  .field-checkbox input[type="checkbox"]:checked + span:before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  left: -61px;
+  top: 8px;
+  border: 2px solid @pink;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+    @media  (min-width: @screen-sm) {}
+    @media  (min-width: @screen-md) {
+      left: -51px;
+  }
+
+  }
+
+/*&__input {
 cursor: pointer;
 margin-bottom: 37px;
+margin-left: 70px;
 font-size: (@font-size+4);
 line-height: (@line-height+17);
 
@@ -79,8 +161,8 @@ input[type="checkbox"] {
   transform: rotate(-45deg);
 
   @media  (min-width: @screen-sm){}
-  @media  (min-width: @screen-md){}
-}
+  @media  (min-width: @screen-md){}*/
+
 
 
 

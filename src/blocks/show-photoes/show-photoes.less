@@ -8,30 +8,33 @@
   padding-right: 20px;
   padding-top: 45px;
   padding-bottom: 45px;
+  text-align: center;
 
-@media  (min-width: @screen-sm) {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 67px;
-  padding-bottom: 73px;
-}
-@media  (min-width: @screen-md) {
-  padding-left: 130px;
-  padding-right: 130px;
-  padding-top: 58px;
-  padding-bottom: 68px;
-}
+  @media  (min-width: @screen-sm) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 67px;
+    padding-bottom: 73px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+  }
+  @media  (min-width: @screen-md) {
+    padding-top: 58px;
+    padding-bottom: 68px;
+    text-align: center;
+  }
 
-  &__text{
+  &__text {
     display: block;
     font-size: @font-size;
     line-height: (@line-height+12);
     color: @dack_blue_grey;
     text-align: center;
 
-  @media  (min-width: @screen-sm) {
-    font-size: (@font-size+4);
-  }
-  @media  (min-width: @screen-md) {}
-  }
+    @media  (min-width: @screen-sm) {
+      font-size: (@font-size+4);
+    }
+    @media  (min-width: @screen-md) {}
+    }
 }

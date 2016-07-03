@@ -4,10 +4,28 @@
 
 
 .line {
-  width: 100%;
-  height: 1px;
-  background: #dddfe0;
+	display: block;
 
-  @media  (min-width: @screen-sm) {}
-  @media  (min-width: @screen-md) {}
+	@media  (min-width: @screen-sm) {
+		width: 100%;
+		height: 1px;
+		background: #dddfe0;
+	}
+	@media  (min-width: @screen-md) {}
+
+
+	&__mobile {
+		width: 100%;
+		height: 1px;
+		background: #dddfe0;
+		margin-top: 25px;
+
+		@media  (min-width: @screen-sm) {
+			display: none;
+		}
+		@media  (min-width: @screen-md) {
+			display: none;
+		}
+	}
 }
+

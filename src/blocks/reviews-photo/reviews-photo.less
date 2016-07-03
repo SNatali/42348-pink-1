@@ -3,7 +3,7 @@
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
 
-.reviews-photoes{
+.reviews-photoes {
   padding-bottom: 20px;
 
   @media  (min-width: @screen-sm) {
@@ -18,112 +18,24 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
-   //padding-left: -20px;
- // padding-right: -20px;
   width: 100%;
 
-  &:first-of-type {
-    //padding-left: 0;
-    //padding-right: 0;
+  @media  (min-width: @screen-sm) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
-
-  //&:last-of-type{
-    //padding-bottom: 0;
-  //}
-@media  (min-width: @screen-sm) {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-@media  (min-width: @screen-md) {
-  width: 33.3%;
+  @media  (min-width: @screen-md) {
+    width: 33.3%;
 }
 
-
-
-  &__images {
-    //margin:0;
-    //background-size: cover;
-    //height: auto;
-    //width: 100%;
-
-    @media  (min-width: @screen-sm) {}
-    @media  (min-width: @screen-md) {}
-  }
-
-  .reviews-photo__img {
+  &__img {
     max-width: 100%;
     width: 100%;
     height: auto;
   }
-
-  &__name {
-    font-weight: bold;
-    font-size: @font-size;
-    line-height: (@line-height+6);
-    color: @dack_blue_grey;
-    //flex: 1 0 auto;
-    //flex-wrap: wrap;
-    //display: flex;
-
-    >span{
-      font-weight: normal;
-      text-transform: uppercase;
-    }
-
-    @media  (min-width: @screen-sm) {}
-    @media  (min-width: @screen-md) {}
-  }
-
-  &__text {
-    display: flex;
-   // flex-wrap: wrap;
-    flex: 1 0 auto;
-    text-transform: none;
-    font-size: @font-size;
-    line-height: (@line-height+6);
-    color: @dack_blue_grey;
-    padding-bottom: 17px;
-    margin: 0;
-    @media  (min-width: @screen-sm) {}
-    @media  (min-width: @screen-md) {}
-  }
-
-  &__like {
-    display: block;
-    font-size: @font-size;
-    line-height: (@line-height+6);
-    color: @pink;
-    text-transform: uppercase;
-
-
-      &::before{
-        content: "";
-        display: inline-block;
-        background: url("../img/icon-heart.svg") no-repeat;
-        background-position: left center;
-        width: 12px;
-        height: 12px;
-        margin-right: 16px;
-      }
-    @media  (min-width: @screen-sm) {}
-    @media  (min-width: @screen-md) {}
-  }
 }
 
-.first-review{
-    margin-left: 20px;
-    margin-right: 20px;
-
-     @media  (min-width: @screen-sm) {
-      margin-left: 40px;
-      margin-right: 40px;
-     }
-    @media  (min-width: @screen-md) {
-      margin-left: 130px;
-      margin-right: 130px;
-    }
-  }
 
 

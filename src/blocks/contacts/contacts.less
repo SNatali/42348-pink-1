@@ -30,6 +30,7 @@
     span {
       display: flex;
       justify-content: center;
+      text-align: center;
     }
 
   @media  (min-width: @screen-sm) {}
@@ -60,6 +61,7 @@
 
   &__box {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     flex-grow: 2;
     margin-bottom: 25px;
@@ -101,6 +103,7 @@
     font-size: (@font-size+4);
     font-weight: bold;
     line-height: (@line-height+14);
+    flex-wrap: wrap;
 
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {
@@ -116,6 +119,7 @@
     font-size: (@font-size+10);
     line-height: (@line-height+14);
     text-align: center;
+    flex-wrap: wrap;
 
   &:hover {
     color: @dack_blue_grey;
