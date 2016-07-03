@@ -353,6 +353,10 @@ function getComponentsFiles() {
   if(fileExistAndHasContent(dirs.source + '/css/global-additional-css.css')) {
     сomponentsFilesList.additionalCss.unshift(dirs.source + '/css/global-additional-css.css');
   }
+  // Добавим CSS-файл со шрифтами в начало массива с обрабатываемыми CSS-файлами
+  if(fileExistAndHasContent(dirs.source + '/css/fonts.css')) {
+    сomponentsFilesList.additionalCss.unshift(dirs.source + '/css/fonts.css');
+  }
   // Добавим глобальные изображения
   сomponentsFilesList.img.unshift(dirs.source + '/img/*.{jpg,jpeg,gif,png,svg}');
   сomponentsFilesList.img = uniqueArray(сomponentsFilesList.img);
