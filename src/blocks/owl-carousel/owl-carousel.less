@@ -220,11 +220,12 @@
   z-index: 1;
 }
 .owl-nav {
-  font-size: 0;
+  display: none;
+  //font-size: 0;
 
   @media  (min-width: @screen-sm){}
   @media  (min-width: @screen-md){
-    //display: none;
+    display: block;
   }
 }
 
@@ -233,10 +234,10 @@
   @media  (min-width: @screen-sm){}
   @media  (min-width: @screen-md){
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     left: 0;
-    top: 133px;
+    top: 145px;
     border: 2px solid #efefef;
     border-top: none;
     border-right: none;
@@ -262,10 +263,10 @@
   @media  (min-width: @screen-sm){}
   @media  (min-width: @screen-md){
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     right: 0;
-    top: 133px;
+    top: 145px;
     border: 2px solid #efefef;
     border-top: none;
     border-right: none;
@@ -292,7 +293,9 @@
   justify-content: center;
   text-align: center;
 
-  @media  (min-width: @screen-sm){}
+  @media  (min-width: @screen-sm){
+    margin-top: 26px;
+  }
   @media  (min-width: @screen-md){
     display: none;
   }
@@ -307,8 +310,8 @@
   word-wrap: break-word;
   margin-right: 20px;
   background: #b5b9be;
-  width: 12px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
 
   @media  (min-width: @screen-sm) {}
@@ -319,8 +322,8 @@
 
 .owl-dots .active span{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -2px;
   width: 12px;
   height: 12px;
   border: 3px solid @dack_blue_grey;
@@ -328,7 +331,7 @@
 }
 
 .items{
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 

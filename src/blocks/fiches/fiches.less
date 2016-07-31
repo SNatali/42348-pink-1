@@ -31,8 +31,8 @@
     @media  (min-width: @screen-sm) {
       flex-direction: column;
       padding-top: 0;
-      width: 49%;
-      margin-left: 6%;
+      width: 50%;
+      margin-left: 5%;
     }
     @media  (min-width: @screen-md) {
       flex-direction: row;
@@ -92,13 +92,14 @@
    	@media  (min-width: @screen-sm) {
       padding-left: 0;
       padding-right: 0;
+      margin-bottom: 16px;
 
        &:last-of-type{
-        padding-bottom: 45px;
+        padding-bottom: 27px;
       }
     }
     @media  (min-width: @screen-md) {
-      margin-top: -60px;
+      margin-top: -91px;
       z-index: 2;
       position: relative;
 
@@ -115,13 +116,13 @@
     font-size: 18px;
     line-height: 18px;
     margin: 0;
-    padding-top: 35px;
-    padding-bottom: 15px;
+    padding-top: 39px;
+    padding-bottom: 16px;
 
    	@media  (min-width: @screen-sm) {
       text-align: left;
-      padding-top: 40px;
-      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 15px;
     }
     @media  (min-width: @screen-md) {
       text-align: center;
@@ -129,7 +130,8 @@
       line-height: (@line-height+12);
       width: 210px;
       margin: 0 auto;
-      padding-top: 50px;
+      padding-top: 56px;
+      padding-bottom: 22px;
     }
   }
 
@@ -139,7 +141,8 @@
     text-align: center;
     margin: 0 auto;
     font-size: @font-size;
-    line-height: @line-height;
+ //   line-height: @line-height;
+    line-height: 22px;
 
     @media  (min-width: @screen-sm) {
       text-align: left;
@@ -163,16 +166,22 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-size: 100% 100%;
   width: 100%;
-  height: 50px;
+  height: 24px;
   transform: rotate(180deg);
   position: absolute;
-  top: -49px;
+  top: -24px;
   left: 0;
   right: 0;
   z-index: 1;
 
-    @media  (min-width: @screen-sm) {}
-    @media  (min-width: @screen-md) {}
+    @media  (min-width: @screen-sm) {
+      top: -61px;
+      height: 61px;
+    }
+    @media  (min-width: @screen-md) {
+      top: -89px;
+      height: 89px;
+    }
 }
 
 
@@ -180,7 +189,7 @@
   content: "";
   display: flex;
   background-image: url("../img/iphone-screen-mobile.png") ;
-  height: 277px;
+  height: 282px;
   width: 157px;
   margin: 0 auto;
   margin-top: 40px;
@@ -191,7 +200,7 @@
       background-position: bottom;
       height: auto;
       width: 268px;
-      margin-top: -40px;
+      margin-top: -80px;
       margin-left: 0;
       z-index: 2;
       position: absolute;

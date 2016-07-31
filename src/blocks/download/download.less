@@ -17,7 +17,7 @@
     flex-direction: column;
     padding-left: 11%;
     padding-right: 11%;
-    padding-bottom: 78px;
+    padding-bottom: 70px;
   }
 }
 
@@ -28,18 +28,23 @@
   width: auto;
   z-index: 3;
   background:  @dack_blue_grey;
-  padding: 25px 20px;
-  margin-top: 380px;
+  padding: 28px 20px;
+  margin-top: 381px;
 
   @media  (min-width: @screen-sm) {
     background: transparent;
     margin-top: 0;
-    width: 380px;
-    padding-bottom: 134px;
+    width: 300px;
+    padding-bottom: 109px;
+    padding-left: 0;
+    padding-right: 0;
   }
   @media  (min-width: @screen-md) {
     background: transparent;
-    padding: 45px 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 46px;
+    padding-bottom: 50px;
     margin-top: 0;
   }
 
@@ -106,16 +111,19 @@
 .download__image {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
-    //align-items: flex-end;
+    padding: 38px 0 20px;
+    align-items: center;
+    align-content: center;
 
   @media  (min-width: @screen-sm) {
-     justify-content: space-around;
-     width: 300px;
+     width: 100%;
+     padding-top: 48px;
+     padding-bottom: 37px;
+     padding-left: 0;
   }
   @media  (min-width: @screen-md) {
       justify-content: space-around;;
-      padding: 50px 0;
+      padding: 67px 0 54px;
   }
 
 

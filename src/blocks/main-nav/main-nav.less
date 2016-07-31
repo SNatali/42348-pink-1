@@ -10,7 +10,7 @@
 
   @media  (min-width: @screen-sm) {}
   @media  (min-width: @screen-md) {
-    margin-left: 100px;
+   margin-left: auto;
   }
 
 
@@ -46,11 +46,13 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 80px;
+    top: 69px;
     left: 0;
     right: 0;
     background: @text-color;
     z-index: 2;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #485260;
 
   @media  (min-width: @screen-sm) {
     top: 100px;
@@ -82,7 +84,7 @@
 
   &__link {
     display: block;
-    padding: 18px 21px;
+    padding: 15px 21px;
     font-size: (@font-size+4);
     line-height: (@line-height+14);
     color: @white;
@@ -121,7 +123,7 @@
     text-transform: none;
     line-height: @line-height;
     padding-left: 42px;
-    padding-right: 42px;
+    padding-right: 39px;
     padding-bottom: 15px;
   }
   }

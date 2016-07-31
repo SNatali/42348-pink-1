@@ -4,20 +4,20 @@
 
 
 .field-radio {
-  padding-bottom: 35px;
+  padding-bottom: 41px;
 
   &:last-of-type {
 
     @media  (min-width: @screen-sm) {
-      padding-bottom: 47px;
+      padding-bottom: 59px;
     }
   }
 
   @media  (min-width: @screen-sm) {
-   padding-bottom: 43px;
+   padding-bottom: 40px;
   }
   @media  (min-width: @screen-md) {
-    padding-bottom: 31px;
+    padding-bottom: 40px;
   }
 
 
@@ -28,6 +28,7 @@
     font-size: (@font-size+4);
     line-height: (@line-height+17);
 
+
     &::before,
     &::after {
       content: "";
@@ -35,25 +36,39 @@
       top: 0;
       left: -70px;
       border-radius: 50%;
+
+      @media  (min-width: @screen-sm) {
+        left: -59px;
+      }
+      @media  (min-width: @screen-md) {}
     }
 
+
     &::before {
-      width: 35px;
       width: 35px;
       height: 35px;
       background: @white;
       border: 2px solid #e5e5e5;
+
+      @media  (min-width: @screen-sm){
+      width: 40px;
+      height: 40px;
+      }
+      @media  (min-width: @screen-md){}
     }
+
 
       &:hover::before {
       border: 2px solid @dack_blue_grey;
       transition-duration: 0.5ms;
     }
 
+
     &:active::before {
       border: 2px solid @pink;
       transition-duration: 0.5ms;
     }
+
 
     &::after {
     width: 35px;
@@ -62,10 +77,21 @@
     transform: scale(0);
     transition-property:transform;
     transition-duration: 0.28ms;
+
+    @media  (min-width: @screen-sm){
+      width: 40px;
+      height: 40px;
+      }
+    @media  (min-width: @screen-md){}
    }
 
-      @media  (min-width: @screen-sm){}
-      @media  (min-width: @screen-md){}
+
+      @media  (min-width: @screen-sm){
+        margin-left: 59px;
+      }
+      @media  (min-width: @screen-md){
+        line-height: (@line-height+18);
+      }
   }
 
   input[type="radio"] {
