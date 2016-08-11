@@ -27,7 +27,7 @@
   @media  (min-width: @screen-sm) {
     padding-left: 40px;
     padding-top: 11px;
-    padding-bottom: 42px;
+    padding-bottom: 0;
   }
   @media  (min-width: @screen-md) {
     display: flex;
@@ -81,7 +81,8 @@
   content: "";
   position: absolute;
   top: 173px;
-  left: 0;
+  left: auto;
+  right: 0;
   z-index: 1;
   background: url("../img/iphone-hand-mobile.png") no-repeat top center;
   width: 258px;
@@ -92,9 +93,9 @@
   width: 700px;
   height: 545px;
   z-index: 1;
-  left: 0;
+  left: auto;
   top: auto;
-  left: 0;
+  right: 0;
   bottom: 0;
 }
 @media  (min-width: @screen-md) {

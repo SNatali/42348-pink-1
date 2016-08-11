@@ -104,13 +104,7 @@ gulp.task('copy:css', function(callback) {
 // Копирование и оптимизация изображений
 gulp.task('img', function () {
   console.log('---------- Копирование и оптимизация картинок');
-  return gulp.src(blocks.img, {since: gulp.lastRun('img')}) // только для изменившихся с последнего запуска файлов
-    .pipe(newer(dirs.build + '/img'))  // оставить в потоке только изменившиеся файлы
-    .pipe(imagemin({
-        progressive: true,
-        svgoPlugins: [{removeViewBox: false}],
-        use: [pngquant()]
-    }))
+  return gulp.src(blocks.img ) // только для изменившихся с последнего запуска файлов
     .pipe(gulp.dest(dirs.build + '/img'));
 });
 

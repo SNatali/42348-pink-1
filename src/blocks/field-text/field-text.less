@@ -54,8 +54,10 @@
     padding-bottom: 5px;
 
     @media  (min-width: @screen-sm){
+      line-height: (@line-height+15);
       padding-left: 0;
       padding-right: 20px;
+      padding-bottom: 0;
     }
     @media  (min-width: @screen-md) {}
   }
@@ -63,8 +65,8 @@
   &__tel{
 
     @media  (min-width: @screen-sm){
-      background: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
+    //  background: url("../img/icon-phone.svg");
+      background: data-uri('image/svg+xml;charset=UTF-8', '../img/icon-phone.svg') no-repeat;
       background-position: right 23px center;
     }
     @media  (min-width: @screen-md) {}
@@ -73,8 +75,8 @@
    &__email{
 
     @media  (min-width: @screen-sm){
-      background: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
+    //  background: url("../img/icon-mail.svg");
+      background: data-uri('image/svg+xml;charset=UTF-8', '../img/icon-mail.svg') no-repeat;
       background-position: right 23px center;
       padding-right: 20px;
     }
